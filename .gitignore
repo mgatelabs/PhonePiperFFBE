@@ -1,0 +1,9 @@
+/*.png
+/*.log
+/*.zip
+/connection.json
+/selections*.json
+/configs/*.json
+/views/*recovery*
+/views/local*
+/state/*.json
