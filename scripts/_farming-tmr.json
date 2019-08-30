@@ -729,8 +729,22 @@
               "value": "Found Random Land, Backing up"
             },
             {
+			  "condition": {
+				"is":"EQUAL",
+				"var": "allow-soft_back",
+				"value": "1"
+			  },
               "type": "EVENT",
               "value": "back"
+            },
+            {
+			  "condition": {
+				"is":"EQUAL",
+				"var": "allow-soft_back",
+				"value": "0"
+			  },
+              "type": "TAP",
+              "value": "menu-goal_list-back"
             },
             {
               "type": "WAIT",

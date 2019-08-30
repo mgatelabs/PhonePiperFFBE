@@ -326,7 +326,14 @@
         {
           "condition": {
             "not": "SCREEN",
-            "value": "menu-home"
+            "value": "menu-home",
+			"and": [
+				{
+					"is":"EQUAL",
+					"var": "allow-soft_back",
+					"value": "1"
+				}
+			]
           },
           "actions": [
             {
@@ -343,6 +350,60 @@
             {
               "type": "EVENT",
               "value": "back"
+            },
+            {
+              "type": "RANDOM",
+              "var": "backupDelay",
+              "args": {
+                "min": "2500",
+                "max": "3500"
+              }
+            },
+            {
+              "type": "INFO",
+              "value": "Returning home with ${backupDelay}ms delay"
+            },
+            {
+              "type": "WAIT",
+              "value": "2500"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+		{
+          "condition": {
+            "not": "SCREEN",
+            "value": "menu-home",
+			"and": [
+				{
+				"is":"EQUAL",
+				"var": "allow-soft_back",
+				"value": "0"
+				},
+				{
+					"not": "SCREEN",
+					"value": "menu-common-back"
+				}
+			]
+          },
+          "actions": [
+            {
+              "type": "SET",
+              "var": "setup",
+              "value": "0"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "SET",
+              "value": "0",
+              "var": "_screen_saver"
+            },
+            {
+              "type": "TAP",
+              "value": "menu-goal_list-back"
             },
             {
               "type": "RANDOM",

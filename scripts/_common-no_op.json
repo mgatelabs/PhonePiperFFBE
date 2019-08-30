@@ -60,6 +60,15 @@
       "order": "10"
     },
     {
+      "name": "allow-soft_back",
+      "display": "Soft Back Support?",
+      "value": "1",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "displayType": "BOOLEAN",
+      "order": "10"
+    },
+    {
       "name": "os-icon",
       "display": "App Icon",
       "value": "a",
