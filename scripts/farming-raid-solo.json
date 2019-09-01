@@ -519,6 +519,30 @@
             }
           ]
         },
+		{
+          "condition": {
+            "is": "SCREEN",
+            "value": "battle-actions"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Battle Actions Left Open, Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "battle-actions-back"
+            },
+            {
+              "type": "WAIT",
+              "value": "1000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
         // Unit 0
         {
           "condition": {

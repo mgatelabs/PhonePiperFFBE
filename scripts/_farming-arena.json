@@ -42,6 +42,20 @@
         {"name": "Four", "value": "3"},
         {"name": "Five (Right)", "value": "4"}
       ]
+    },
+    {
+      "name" : "arena-orbs",
+      "display" : "Orbs",
+      "value" : "1",
+      "type" : "INT",
+      "modify" : "EDITABLE",
+      "displayType" : "STANDARD",
+      "order" : 0,
+      "tierId": "arena",
+      "values": [
+        {"name": "Need One", "value": "1"},
+        {"name": "Need Two", "value": "2"}
+      ]
     }, {
       "name" : "arena-party-defense-index",
       "display" : "Defense Index",
@@ -355,28 +369,31 @@
       ],
       "statements": [
         {
-          "condition": {
-            "is": "SCREEN",
-            "value": "menu-arena-have-orbs",
-            "andOr": [
-              {
-                "is": "SCREEN",
-                "value": "menu-arena_screen"
-              },
-              {
-                "is": "SCREEN",
-                "value": "menu-arena_screen-friends"
-              },
-              {
-                "is": "SCREEN",
-                "value": "menu-arena_screen-top"
-              }
-            ]
-          },
           "actions": [
             {
-              "type": "INFO",
-              "value": "Orb Available, Starting Fight"
+              "condition": {
+                "is": "CALL",
+                "value": "@arenaInScreen",
+                "and": [
+                  {
+                    "is": "CALL",
+                    "value": "@arenaHasOrbs"
+                  }
+                ]
+              },
+              "type":"GOTO",
+              "value": "ORBS_READY"
+            },
+            {
+              "type": "CONTINUE"
+            },
+            {
+              "type": "LABEL",
+              "value": "ORBS_READY"
+            },
+            {
+              "type": "DEBUG",
+              "value": "Orb Available, Continue!"
             },
             {
               "type": "TAP",
@@ -401,24 +418,76 @@
       ]
     },
 
+    "@arenaInScreen": {
+      "statements":{
+        "actions": [
+          {
+            "condition": {
+              "is": "SCREEN",
+              "value": "menu-arena_screen,menu-arena_screen-friends,menu-arena_screen-top"
+            },
+            "type": "RETURN",
+            "value": "1"
+          },
+          {
+            "type": "RETURN",
+            "value": "0"
+          }
+        ]
+      }
+    },
+
+    "@arenaHasOrbs": {
+      "statements":{
+        "actions": [
+          {
+            "condition": {
+              "not": "SCREEN",
+              "value": "menu-arena-have-orbs"
+            },
+            "type": "RETURN",
+            "value": "0"
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "arena-orbs",
+              "value": "1",
+              "or":[
+                {
+                  "is": "EQUAL",
+                  "var": "arena-orbs",
+                  "value": "2",
+                  "and": [
+                    {
+                      "not": "SCREEN",
+                      "value": "menu-arena-orb_1-empty"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": "RETURN",
+            "value": "1"
+          },
+          {
+            "type": "RETURN",
+            "value": "0"
+          }
+        ]
+      }
+    },
+
     "_arena-menu-orbs": {
       "statements" : [
         {
           "condition" : {
-            "not"   : "SCREEN",
-            "value" : "menu-arena-have-orbs",
-            "andOr" : [
+            "not"   : "CALL",
+            "value" : "@arenaHasOrbs",
+            "and" : [
               {
-                "is"    : "SCREEN",
-                "value" : "menu-arena_screen"
-              },
-              {
-                "is"    : "SCREEN",
-                "value" : "menu-arena_screen-friends"
-              },
-              {
-                "is"    : "SCREEN",
-                "value" : "menu-arena_screen-top"
+                "is"    : "call",
+                "value" : "@arenaInScreen"
               }
             ]
           },

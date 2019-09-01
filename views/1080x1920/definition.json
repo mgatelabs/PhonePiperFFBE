@@ -4137,7 +4137,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - Arena Orbs",
+    "name" : "Menu - Arena - Orb 0 - Full",
     "screenId" : "menu-arena-have-orbs",
     "points" : [ {
       "x" : 447,
@@ -4393,6 +4393,89 @@
       "x" : 965,
       "y" : 438,
       "r" : 0,
+      "g" : 0,
+      "b" : 0
+    } ],
+    "enabled" : true
+  }, {
+    "name" : "Menu - Arena - Orb 1 - Empty",
+    "screenId" : "menu-arena-orb_1-empty",
+    "points" : [ {
+      "x" : 491,
+      "y" : 1740,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 489,
+      "y" : 1740,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 493,
+      "y" : 1740,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 491,
+      "y" : 1742,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 491,
+      "y" : 1738,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 489,
+      "y" : 1738,
+      "r" : 63,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 493,
+      "y" : 1738,
+      "r" : 64,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 493,
+      "y" : 1742,
+      "r" : 63,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 489,
+      "y" : 1742,
+      "r" : 63,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 487,
+      "y" : 1740,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 495,
+      "y" : 1740,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 491,
+      "y" : 1736,
+      "r" : 59,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 491,
+      "y" : 1744,
+      "r" : 59,
       "g" : 0,
       "b" : 0
     } ],
@@ -12078,6 +12161,11 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - News - Summon",
+    "screenId" : "menu-news-summon",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Play Mission",
     "screenId" : "menu-play_mission",
     "points" : [ {
@@ -14524,6 +14612,11 @@
       "b" : 26
     } ],
     "enabled" : true
+  }, {
+    "name" : "Menu - Vortex - Back",
+    "screenId" : "menu-vortex-back",
+    "points" : [ ],
+    "enabled" : false
   }, {
     "name" : "menu-vortex-enhance",
     "screenId" : "menu-vortex-enhance",
@@ -18432,6 +18525,14 @@
     "w" : 133,
     "h" : 59,
     "enabled" : true
+  }, {
+    "name" : "Menu - News - Summon - Close",
+    "componentId" : "menu-news-summon-close",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
   }, {
     "name" : "Menu - play_mission-no",
     "componentId" : "menu-play_mission-no",

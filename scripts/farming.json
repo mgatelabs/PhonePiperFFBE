@@ -384,7 +384,7 @@
 				"value": "0"
 				},
 				{
-					"not": "SCREEN",
+					"is": "SCREEN",
 					"value": "menu-common-back"
 				}
 			]
