@@ -634,6 +634,27 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-restart_data_cleared"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Restart data cleared Screen, returning to Home..."
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "TAP",
+              "value": "menu-restart_data_cleared-ok"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-quest_erase"
           },
           "actions": [

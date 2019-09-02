@@ -751,6 +751,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Restart data cleared",
+    "screenId" : "menu-restart_data_cleared",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Results - Damage",
     "screenId" : "menu-results-damage",
     "points" : [ ],
@@ -2110,6 +2115,14 @@
   }, {
     "name" : "Menu - Raid Recovery - Yes",
     "componentId" : "menu-raid_recovery-yes",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Restart data cleared - OK",
+    "componentId" : "menu-restart_data_cleared-ok",
     "x" : 0,
     "y" : 0,
     "w" : 1,
