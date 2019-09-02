@@ -5258,6 +5258,95 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Common - Back - Vortex",
+    "screenId" : "menu-common-back-vortex",
+    "points" : [ {
+      "x" : 34,
+      "y" : 93,
+      "r" : 0,
+      "g" : 82,
+      "b" : 177
+    }, {
+      "x" : 43,
+      "y" : 84,
+      "r" : 0,
+      "g" : 74,
+      "b" : 182
+    }, {
+      "x" : 40,
+      "y" : 87,
+      "r" : 0,
+      "g" : 65,
+      "b" : 172
+    }, {
+      "x" : 37,
+      "y" : 90,
+      "r" : 0,
+      "g" : 76,
+      "b" : 176
+    }, {
+      "x" : 21,
+      "y" : 93,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 21,
+      "y" : 91,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 43,
+      "y" : 71,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 45,
+      "y" : 71,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 175,
+      "y" : 182,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 173,
+      "y" : 182,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 173,
+      "y" : 169,
+      "r" : 0,
+      "g" : 33,
+      "b" : 126
+    }, {
+      "x" : 182,
+      "y" : 160,
+      "r" : 0,
+      "g" : 42,
+      "b" : 136
+    }, {
+      "x" : 194,
+      "y" : 160,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 194,
+      "y" : 158,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    } ],
+    "enabled" : true
+  }, {
     "name" : "Menu - Companion Changed",
     "screenId" : "menu-companion_changed",
     "points" : [ {
@@ -18044,6 +18133,22 @@
     "y" : 1770,
     "w" : 550,
     "h" : 100,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Common - Back",
+    "componentId" : "menu-common-back",
+    "x" : 37,
+    "y" : 340,
+    "w" : 141,
+    "h" : 78,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Common - Back - Vortex",
+    "componentId" : "menu-common-back-vortex",
+    "x" : 37,
+    "y" : 87,
+    "w" : 140,
+    "h" : 79,
     "enabled" : true
   }, {
     "name" : "Menu - Companion Changed - OK",

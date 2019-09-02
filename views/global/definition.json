@@ -380,6 +380,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Common - Back - Vortex",
+    "screenId" : "menu-common-back-vortex",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Companion Changed",
     "screenId" : "menu-companion_changed",
     "points" : [ ],
@@ -1508,6 +1513,22 @@
   }, {
     "name" : "Menu - Arena - Setup",
     "componentId" : "menu-arena-setup",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Common - Back",
+    "componentId" : "menu-common-back",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Common - Back - Vortex",
+    "componentId" : "menu-common-back-vortex",
     "x" : 0,
     "y" : 0,
     "w" : 1,
