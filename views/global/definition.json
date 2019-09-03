@@ -711,6 +711,11 @@
     } ],
     "enabled" : false
   }, {
+    "name" : "Menu - News - Fullscreen",
+    "screenId" : "menu-news-fullscreen",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - News - Summon",
     "screenId" : "menu-news-summon",
     "points" : [ ],
@@ -2027,6 +2032,14 @@
   }, {
     "name" : "menu-new_data-ok",
     "componentId" : "menu-new_data-ok",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - News - Fullscreen - OK",
+    "componentId" : "menu-news-fullscreen-ok",
     "x" : 0,
     "y" : 0,
     "w" : 1,

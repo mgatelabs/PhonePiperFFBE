@@ -255,6 +255,26 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-news-fullscreen"
+          },
+          "actions": [
+            {
+              "type": "TAP",
+              "value": "menu-news-fullscreen-ok"
+            },
+            {
+              "type": "WAIT",
+              "value": "1500"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-connection_error_2"
           },
           "actions": [
