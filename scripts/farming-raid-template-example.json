@@ -289,10 +289,6 @@
               "value": "Fighting"
             },
             {
-              "type": "BATCH",
-              "value": "START"
-            },
-            {
               "type": "CALL",
               "value": "@tapUnit",
               "args": {
@@ -319,10 +315,6 @@
               "args": {
                 "index": "2"
               }
-            },
-            {
-              "type": "BATCH",
-              "value": "END"
             },
             {
               "type": "REPEAT",

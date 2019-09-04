@@ -646,10 +646,6 @@
               "value": "Fighting"
             },
             {
-              "type": "BATCH",
-              "value": "START"
-            },
-            {
               "condition": {
                 "not": "EQUAL",
                 "var": "raid-tap-0",
@@ -720,10 +716,6 @@
               "args": {
                 "index": "${raid-tap-5}"
               }
-            },
-            {
-              "type": "BATCH",
-              "value": "END"
             },
             {
               "type": "REPEAT",
