@@ -360,7 +360,6 @@
       "includes": [
         "_arena-menu-orbs",
         "_arena-menu-rules",
-        "_arena-find_depart_team",
         "_arena-menu-opponent-select",
         "_arena-menu-confirm-select",
         "_arena-menu-begin",
