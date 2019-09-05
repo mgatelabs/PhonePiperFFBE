@@ -289,10 +289,6 @@
         "count": {
           "value": "1",
           "type": "INT"
-        },
-        "counter": {
-          "value": "1",
-          "type": "INT"
         }
       },
       "statements": [
@@ -334,12 +330,12 @@
               "value": "SLIDE_LOOP"
             },
             {
-              "type": "SLOW_UP",
-              "value": "battle-skill-top-slider"
+              "type": "FINER",
+              "value": "Sliding Up ${row}"
             },
             {
-              "type": "FINE",
-              "value": "Sliding Up ${row}"
+              "type": "SLOW_UP",
+              "value": "battle-skill-top-slider"
             },
             {
               "type": "ADD",
@@ -361,7 +357,7 @@
               "var": "index"
             },
             {
-              "type": "FINE",
+              "type": "FINER",
               "value": "Tapping action index ${index}"
             },
             {
