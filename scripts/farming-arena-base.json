@@ -225,6 +225,10 @@
             },
             { "type": "CALL", "value": "@keepAlive" },
             {
+              "type": "BATCH",
+              "value": "start"
+            },
+            {
               "type": "CALL",
               "value": "@tapUnit",
               "args": {
@@ -258,6 +262,10 @@
               "args": {
                 "index": "2"
               }
+            },
+            {
+              "type": "BATCH",
+              "value": "end"
             },
             {
               "type": "SET",

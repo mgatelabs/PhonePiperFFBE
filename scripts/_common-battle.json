@@ -331,7 +331,7 @@
               "value": "SLIDE_LOOP"
             },
             {
-              "type": "INFO",
+              "type": "FINER",
               "value": "Sliding Up ${row}"
             },
             {
@@ -358,7 +358,7 @@
               "var": "index"
             },
             {
-              "type": "INFO",
+              "type": "FINER",
               "value": "Tapping action index ${index}"
             },
             {
