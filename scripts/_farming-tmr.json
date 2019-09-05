@@ -29,6 +29,7 @@
         "_farm-menu-find_depart_team",
         "_farm-menu-depart",
         "_farm-menu-to_battle",
+        "_es-from_battle_to_results",
         "_common-no_op"
       ],
       "statements": [
