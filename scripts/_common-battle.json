@@ -314,7 +314,8 @@
               "value": "500"
             },
             {
-              "type": "RETURN"
+              "type": "RETURN",
+              "value": "1"
             }
           ]
         },
@@ -330,7 +331,7 @@
               "value": "SLIDE_LOOP"
             },
             {
-              "type": "FINER",
+              "type": "INFO",
               "value": "Sliding Up ${row}"
             },
             {
@@ -357,7 +358,7 @@
               "var": "index"
             },
             {
-              "type": "FINER",
+              "type": "INFO",
               "value": "Tapping action index ${index}"
             },
             {
@@ -370,7 +371,8 @@
               "value": "500"
             },
             {
-              "type": "RETURN"
+              "type": "RETURN",
+              "value": "1"
             }
           ]
         }
