@@ -66,42 +66,13 @@
                 "is": "EQUAL",
                 "value": "1",
                 "var": "segment"
-              },
-              {
-                "not": "EQUAL",
-                "value": "2",
-                "var": "turn"
               }
             ]
           },
           "actions": [
             {
               "type": "INFO",
-              "value": "Skipping Reload, moving to Abilities setup"
-            }
-          ]
-        },
-        {
-          "condition": {
-            "is": "CALL",
-            "value": "@isBattleReady",
-            "and": [
-              {
-                "is": "EQUAL",
-                "value": "1",
-                "var": "segment"
-              },
-              {
-                "is": "EQUAL",
-                "value": "2",
-                "var": "turn"
-              }
-            ]
-          },
-          "actions": [
-            {
-              "type": "INFO",
-              "value": "Pressing Reload, turn 1 skills could be available again"
+              "value": "Pressing Reload, all skills could be available again"
             },
             {
               "type": "TAP",
