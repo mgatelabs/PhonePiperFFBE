@@ -28,10 +28,6 @@
             },
             { "type": "CALL", "value": "@keepAlive" },
             {
-              "type": "BATCH",
-              "value": "START"
-            },
-            {
               "type": "CALL",
               "value": "@tapUnit",
               "args": {
@@ -44,10 +40,6 @@
               "args": {
                 "index": "1"
               }
-            },
-            {
-              "type": "BATCH",
-              "value": "END"
             },
             {
               "type": "REPEAT",
@@ -297,6 +289,10 @@
         "count": {
           "value": "1",
           "type": "INT"
+        },
+        "counter": {
+          "value": "1",
+          "type": "INT"
         }
       },
       "statements": [
@@ -334,14 +330,39 @@
               "var": "row"
             },
             {
-              "type": "SLOW_UP",
-              "value": "battle-skill-top-slider",
-              "count": "${row}"
+              "type": "LABEL",
+              "value": "SLIDE_LOOP"
             },
+            {
+              "type": "SLOW_UP",
+              "value": "battle-skill-top-slider"
+            },
+            {
+              "type": "FINE",
+              "value": "Sliding Up ${row}"
+            },
+            {
+              "type": "ADD",
+              "var": "row",
+              "value": "-1"
+            },
+            {
+              "condition": {
+                "is": "GREATER",
+                "var": "row",
+                "value": "0"
+              },
+              "type": "GOTO",
+              "value": "SLIDE_LOOP"
+            },            
             {
               "type": "MATH",
               "value": "2+(${column}*3)",
               "var": "index"
+            },
+            {
+              "type": "FINE",
+              "value": "Tapping action index ${index}"
             },
             {
               "type": "TAP",
