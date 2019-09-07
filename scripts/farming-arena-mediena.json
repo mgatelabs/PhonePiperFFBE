@@ -1,7 +1,13 @@
 //@formatter:off
 {
   "vars": [
-
+    {
+      "name": "arena-med-position",
+      "display": "Unit Position",
+      "description": "The position of the unit",
+      "value": "1",
+      "type": "INT", "modify": "EDITABLE", "order": 10, "tierId": "arena-me_1", "values": [ {"name": "1", "value": "0"}, {"name": "2", "value": "1"}, {"name": "3", "value": "2"}, {"name": "4", "value": "3"}, {"name": "5", "value": "4"}]
+    },
     {
       "name": "arena-med_1-three_col",
       "display": "Tripple Cast - Column",
@@ -102,29 +108,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -140,16 +148,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyTriCastSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-three_row}",
                   "column0": "${arena-med_1-three_col}",
                   "row1": "${arena-med_1-freeze_row}",
@@ -184,29 +194,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -222,16 +234,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyTriCastSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-three_row}",
                   "column0": "${arena-med_1-three_col}",
                   "row1": "${arena-med_1-rage_row}",
@@ -266,29 +280,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -304,16 +320,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyTriCastSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-three_row}",
                   "column0": "${arena-med_1-three_col}",
                   "row1": "${arena-med_1-aeroja_row}",
@@ -353,29 +371,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -391,16 +411,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-freeze_row}",
                   "column0": "${arena-med_1-freeze_col}"
                 }
@@ -433,29 +455,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -471,16 +495,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-rage_row}",
                   "column0": "${arena-med_1-rage_col}"
                 }
@@ -513,29 +539,31 @@
                 "var": "segment"
               },
               {
-                "is": "EQUAL",
-                "value": "0",
-                "var": "unit1Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-med-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitMagicReady",
                 "args": {
-                  "index": "1"
+                  "index": "${arena-med-position}"
                 }
               }
             ]
@@ -551,16 +579,18 @@
               "value": "1"
             },
             {
-              "type": "SET",
-              "var": "unit1Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-med-position}"
+              }
             },
             {
               "condition": {
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "1",
+                  "index": "${arena-med-position}",
                   "row0": "${arena-med_1-aeroja_row}",
                   "column0": "${arena-med_1-aeroja_col}"
                 }

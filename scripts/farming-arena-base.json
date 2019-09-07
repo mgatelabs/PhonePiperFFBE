@@ -1,6 +1,52 @@
 //@formatter:off
 {
-  "vars": [],
+  "vars": [
+    {
+      "name" : "unit0Attempts",
+      "display" : "Unit Abailiy Attempts",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
+    },
+    {
+      "name" : "unit1Attempts",
+      "display" : "Unit Abailiy Attempts",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
+    },
+    {
+      "name" : "unit2Attempts",
+      "display" : "Unit Abailiy Attempts",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
+    },
+    {
+      "name" : "unit3Attempts",
+      "display" : "Unit Abailiy Attempts",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
+    },
+    {
+      "name" : "unit4Attempts",
+      "display" : "Unit Abailiy Attempts",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
+    }
+  ],
   "imports": [
     "_farming-arena-utils",
     "_common-mp",

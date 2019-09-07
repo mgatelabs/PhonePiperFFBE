@@ -410,6 +410,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Daily Reward",
+    "screenId" : "menu-daily_reward",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Depart",
     "screenId" : "menu-depart",
     "points" : [ ],
@@ -828,6 +833,21 @@
   }, {
     "name" : "Menu - Return Title",
     "screenId" : "menu-return_title",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - 0",
+    "screenId" : "menu-special_reward-0",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - 1",
+    "screenId" : "menu-special_reward-1",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - 2",
+    "screenId" : "menu-special_reward-2",
     "points" : [ ],
     "enabled" : false
   }, {
@@ -1590,6 +1610,14 @@
     "h" : 67,
     "enabled" : false
   }, {
+    "name" : "Menu - Daily Reward - X",
+    "componentId" : "menu-daily_reward-x",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Depart - Back",
     "componentId" : "menu-depart-back",
     "x" : 38,
@@ -2160,6 +2188,14 @@
   }, {
     "name" : "Menu - Return Title - Yes",
     "componentId" : "menu-return_title-yes",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - OK",
+    "componentId" : "menu-special_reward-ok",
     "x" : 0,
     "y" : 0,
     "w" : 1,

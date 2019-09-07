@@ -30,7 +30,208 @@
         }
       },
       "statements": [
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var": "segment",
+            "value":"-1"
+          },
+          "actions":[
+            {
+              "type":"FINER",
+              "value": "Resetting Unit Attempts"
+            },
+            {
+              "type": "SET",
+              "var": "unit0Attempts",
+              "value": "0"
+            },
+            {
+              "type": "SET",
+              "var": "unit1Attempts",
+              "value": "0"
+            },
+            {
+              "type": "SET",
+              "var": "unit2Attempts",
+              "value": "0"
+            },
+            {
+              "type": "SET",
+              "var": "unit3Attempts",
+              "value": "0"
+            },
+            {
+              "type": "SET",
+              "var": "unit4Attempts",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
 
+    "@isUnitNotAttempted":{
+      "name": "Is Unit Still Available?",
+      "variables":{
+        "index":{
+          "value":"-1",
+          "type": "INT"
+        }
+      },
+      "statements":[
+        {
+          "actions":[
+            {
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "0",
+                "and":[
+                  {
+                    "is":"EQUAL",
+                    "var":"unit0Attempts",
+                    "value":"0"
+                  }
+                ]
+              },
+              "type":"RETURN",
+              "value": "1"
+            },
+            {
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "1",
+                "and":[
+                  {
+                    "is":"EQUAL",
+                    "var":"unit1Attempts",
+                    "value":"0"
+                  }
+                ]
+              },
+              "type":"RETURN",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "2",
+                "and":[
+                  {
+                    "is":"EQUAL",
+                    "var":"unit2Attempts",
+                    "value":"0"
+                  }
+                ]
+              },
+              "type":"RETURN",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "3",
+                "and":[
+                  {
+                    "is":"EQUAL",
+                    "var":"unit3Attempts",
+                    "value":"0"
+                  }
+                ]
+              },
+              "type":"RETURN",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "4",
+                "and":[
+                  {
+                    "is":"EQUAL",
+                    "var":"unit4Attempts",
+                    "value":"0"
+                  }
+                ]
+              },
+              "type":"RETURN",
+              "value": "1"
+            },
+            {
+              "type":"RETURN",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+
+    "@setUnitAttempted":{
+      "name": "Set Unit Not Available?",
+      "variables":{
+        "index":{
+          "value":"-1",
+          "type": "INT"
+        }
+      },
+      "statements":[
+        {
+          "actions":[
+            {
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "0"
+              },
+              "type":"SET",
+              "var":"unit0Attempts",
+              "value": "1"
+            },
+            {
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "1"
+              },
+              "type":"SET",
+              "var":"unit1Attempts",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "2"
+              },
+              "type":"SET",
+              "var":"unit2Attempts",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "3"
+              },
+              "type":"SET",
+              "var":"unit3Attempts",
+              "value": "1"
+            },{
+              "condition":{
+                "is":"EQUAL",
+                "var":"index",
+                "value": "4"
+              },
+              "type":"SET",
+              "var":"unit4Attempts",
+              "value": "1"
+            },
+            {
+              "type":"RETURN",
+              "value": "0"
+            }
+          ]
+        }
       ]
     },
 

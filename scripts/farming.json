@@ -240,6 +240,46 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-special_reward-0,menu-special_reward-1,menu-special_reward-2"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Special Login Reward, Passing"
+            },
+            {
+              "type": "TAP",
+              "value": "menu-special_reward-ok"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-daily_reward"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Daily Login Reward, Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "menu-daily_reward-x"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-home-login_bonus"
           },
           "actions": [

@@ -6002,6 +6002,11 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Daily Reward",
+    "screenId" : "menu-daily_reward",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Depart",
     "screenId" : "menu-depart",
     "points" : [ {
@@ -14415,6 +14420,21 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Special Reward - 0",
+    "screenId" : "menu-special_reward-0",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - 1",
+    "screenId" : "menu-special_reward-1",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Special Reward - 2",
+    "screenId" : "menu-special_reward-2",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Steal - Recover",
     "screenId" : "menu-steal-recover",
     "points" : [ {
@@ -18482,6 +18502,14 @@
     "h" : 67,
     "enabled" : true
   }, {
+    "name" : "Menu - Daily Reward - X",
+    "componentId" : "menu-daily_reward-x",
+    "x" : 991,
+    "y" : 249,
+    "w" : 35,
+    "h" : 35,
+    "enabled" : true
+  }, {
     "name" : "Menu - Depart - Back",
     "componentId" : "menu-depart-back",
     "x" : 38,
@@ -19056,6 +19084,14 @@
     "y" : 1030,
     "w" : 120,
     "h" : 57,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Special Reward - OK",
+    "componentId" : "menu-special_reward-ok",
+    "x" : 427,
+    "y" : 1676,
+    "w" : 196,
+    "h" : 52,
     "enabled" : true
   }, {
     "name" : "Menu - Steal - Recover - Orb",
