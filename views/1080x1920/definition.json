@@ -5359,6 +5359,35 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Common - Back - Friends",
+    "screenId" : "menu-common-back-friends",
+    "points" : [ {
+      "x" : 23,
+      "y" : 349,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 36,
+      "y" : 349,
+      "r" : 0,
+      "g" : 82,
+      "b" : 176
+    }, {
+      "x" : 195,
+      "y" : 416,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 183,
+      "y" : 416,
+      "r" : 0,
+      "g" : 42,
+      "b" : 137
+    } ],
+    "enabled" : true
+  }, {
     "name" : "Menu - Common - Back - Vortex",
     "screenId" : "menu-common-back-vortex",
     "points" : [ {
@@ -18460,6 +18489,14 @@
     "y" : 381,
     "w" : 141,
     "h" : 79,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Common - Back - Friends",
+    "componentId" : "menu-common-back-friends",
+    "x" : 47,
+    "y" : 347,
+    "w" : 132,
+    "h" : 74,
     "enabled" : true
   }, {
     "name" : "Menu - Common - Back - Vortex",

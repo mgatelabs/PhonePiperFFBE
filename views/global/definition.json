@@ -385,6 +385,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Common - Back - Friends",
+    "screenId" : "menu-common-back-friends",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Common - Back - Vortex",
     "screenId" : "menu-common-back-vortex",
     "points" : [ ],
@@ -1564,6 +1569,14 @@
   }, {
     "name" : "Menu - Common - Back - Expe",
     "componentId" : "menu-common-back-expe",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Common - Back - Friends",
+    "componentId" : "menu-common-back-friends",
     "x" : 0,
     "y" : 0,
     "w" : 1,
