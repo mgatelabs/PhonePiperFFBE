@@ -19347,6 +19347,14 @@
     "h" : 50,
     "enabled" : true
   }, {
+    "name" : "Screen - Center - Top",
+    "componentId" : "screen-center-top",
+    "x" : 470,
+    "y" : 260,
+    "w" : 130,
+    "h" : 60,
+    "enabled" : true
+  }, {
     "name" : "unit-sell_1",
     "componentId" : "unit-sell_1",
     "x" : 25,

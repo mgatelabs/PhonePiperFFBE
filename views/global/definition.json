@@ -2431,6 +2431,14 @@
     "h" : 50,
     "enabled" : false
   }, {
+    "name" : "Screen - Center - Top",
+    "componentId" : "screen-center-top",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "units-enhance_units-back",
     "componentId" : "units-enhance_units-back",
     "x" : 0,
