@@ -726,6 +726,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - News - Rewards",
+    "screenId" : "menu-news-rewards",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - News - Summon",
     "screenId" : "menu-news-summon",
     "points" : [ ],
@@ -2081,6 +2086,14 @@
   }, {
     "name" : "Menu - News - Fullscreen - OK",
     "componentId" : "menu-news-fullscreen-ok",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - News - Rewards - Close",
+    "componentId" : "menu-news-rewards-close",
     "x" : 0,
     "y" : 0,
     "w" : 1,

@@ -40,6 +40,16 @@
       "displayType": "SECONDS"
     },
     {
+      "name": "_appTimer",
+      "description": "App Timer",
+      "value": "0",
+      "type": "INT",
+      "modify": "VISIBLE",
+      "display": "App Timer",
+      "tierId": "timers",
+      "displayType": "SECONDS"
+    },
+    {
       "name": "_loops",
       "description": "Safety timer to stop operations after a long period of inactivity",
       "value": "0",
@@ -47,6 +57,16 @@
       "modify": "VISIBLE",
       "display": "NoOp",
       "tierId": "timers",
+      "displayType": "SECONDS",
+      "order": "5"
+    },
+    {
+      "name": "_loops_check",
+      "description": "The amount of time that must elapse before the app will will be terminated and restarted.  This will happen then the app has been running and nothing has happened.",
+      "value": "800",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "display": "Restart App",
       "displayType": "SECONDS",
       "order": "5"
     },
@@ -241,6 +261,12 @@
     },
     "_common-connection_fix": {
       "name": "Common - No-Op",
+      "variables": {
+        "appCheckForced": {
+          "type":"INT",
+          "value":"0"
+        }
+      },
       "statements": [
         {
           "condition": {
@@ -341,15 +367,25 @@
               "value": ""
             }
           ]
-        }
-      ]
-    },
-    "_common-no_op": {
-      "name": "Common - No-Op",
-      "includes":[
-        "_common-connection_fix"
-      ],
-      "statements": [
+        },
+        {
+          "condition": {
+            "is": "GREATER",
+            "var": "_appTimer",
+            "value": "120"
+          },
+          "actions":[                        
+            {
+              "type":"APP",
+              "value":"CHECK"
+            },
+            {
+              "type":"SET",
+              "var":"_appTimer",
+              "value":"0"
+            }
+          ]
+        },
         {
           "condition": {
             "is": "GREATER",
@@ -367,7 +403,15 @@
               "value":"0"
             }
           ]
-        },
+        }
+      ]
+    },
+    "_common-no_op": {
+      "name": "Common - No-Op",
+      "includes":[
+        "_common-connection_fix"
+      ],
+      "statements": [                
         {
           "condition": {
             "is": "SCREEN",
@@ -650,6 +694,69 @@
             {
               "type": "MOVE",
               "value": "log-in"
+            }
+          ]
+        },
+      
+        {
+          "condition": {
+            "var": "_loops",
+            "is": "GREATER",
+            "value": "${_loops_check}",
+            "and":[
+              {
+                "is":"EQUAL",
+                "var":"appCheckForced",
+                "value":"0"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Too many cycles ${_loops}, need to restart app"
+            },
+            // Reset the counter, so the app will run after turning it back on
+            {
+              "type": "APP",
+              "value": "CLOSE"
+            },
+            {
+              "type": "APP",
+              "value": "CHECK"
+            },
+            {
+              "type": "WAIT",
+              "value": "5000"
+            },
+            {
+              "type": "SET",
+              "var": "appCheckForced",
+              "value": "1"
+            },
+            {
+              "type": "REPEAT"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "var": "_loops",
+            "is": "LESS",
+            "value": "${_loops_check}",
+            "and":[
+              {
+                "is":"EQUAL",
+                "var":"appCheckForced",
+                "value":"1"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "SET",
+              "var": "appCheckForced",
+              "value": "0"
             }
           ]
         },

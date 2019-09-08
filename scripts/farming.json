@@ -681,7 +681,7 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-news-summon"
+            "value": "menu-news-rewards"
           },
           "actions": [
             {
@@ -696,7 +696,7 @@
             { "type": "CALL", "value": "@keepAlive" },
             {
               "type": "TAP",
-              "value": "menu-news-summon-close"
+              "value": "menu-news-rewards-close"
             },
             {
               "type": "REPEAT",
