@@ -681,6 +681,32 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-news-summon"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Tapping Close"
+            },
+            {
+              "type": "SET",
+              "value": "0",
+              "var": "_screen_saver"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "TAP",
+              "value": "menu-news-summon-close"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-title"
           },
           "actions": [
