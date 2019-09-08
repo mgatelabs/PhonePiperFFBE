@@ -30,6 +30,16 @@
       "displayType": "SECONDS"
     },
     {
+      "name": "_wakeTimer",
+      "description": "Wake Timer",
+      "value": "0",
+      "type": "INT",
+      "modify": "VISIBLE",
+      "display": "Wakeup Timer",
+      "tierId": "timers",
+      "displayType": "SECONDS"
+    },
+    {
       "name": "_loops",
       "description": "Safety timer to stop operations after a long period of inactivity",
       "value": "0",
@@ -342,6 +352,24 @@
       "statements": [
         {
           "condition": {
+            "is": "GREATER",
+            "var": "_wakeTimer",
+            "value": "60"
+          },
+          "actions":[                        
+            {
+              "type":"EVENT",
+              "value":"wakeup"
+            },
+            {
+              "type":"SET",
+              "var":"_wakeTimer",
+              "value":"0"
+            }
+          ]
+        },
+        {
+          "condition": {
             "is": "SCREEN",
             "value": "menu-quest_restart"
           },
@@ -359,7 +387,7 @@
               "value": ""
             }
           ]
-        },
+        },      
         {
           "condition": {
             "is": "SCREEN",
