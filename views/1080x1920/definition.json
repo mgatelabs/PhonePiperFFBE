@@ -19005,11 +19005,11 @@
   }, {
     "name" : "Menu - News - Summon - Close",
     "componentId" : "menu-news-summon-close",
-    "x" : 0,
-    "y" : 0,
-    "w" : 1,
-    "h" : 1,
-    "enabled" : false
+    "x" : 971,
+    "y" : 403,
+    "w" : 16,
+    "h" : 16,
+    "enabled" : true
   }, {
     "name" : "Menu - play_mission-no",
     "componentId" : "menu-play_mission-no",
