@@ -540,6 +540,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Expedition - Max slot reached",
+    "screenId" : "menu-expedition-max_slot_reached",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Expedition - New",
     "screenId" : "menu-expedition-new",
     "points" : [ ],
@@ -1774,6 +1779,14 @@
   }, {
     "name" : "Menu - Expedition - Item - 3",
     "componentId" : "menu-expedition-item-3",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Expedition - Max slot reached - NO",
+    "componentId" : "menu-expedition-max_slot_reached-no",
     "x" : 0,
     "y" : 0,
     "w" : 1,
