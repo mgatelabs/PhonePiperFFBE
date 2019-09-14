@@ -2,5 +2,7 @@
 	"name": "Samsung Galaxy S7 - 1080P",
 	"viewId":"1080x1920",
 	"width":"1080",
-	"height":"1920"
+	"height":"1920",
+	"viewWidth":"1080",
+	"viewHeight":"1920"
 }
