@@ -62,7 +62,7 @@
     },
     {
       "name": "_loops_check",
-      "description": "The amount of time that must elapse before the app will will be terminated and restarted.  This will happen then the app has been running and nothing has happened.",
+      "description": "The amount of time that must elapse before the app will be terminated and restarted.  This will happen only when the app has been running and nothing has happened for a long time.",
       "value": "800",
       "type": "INT",
       "modify": "EDITABLE",
@@ -73,7 +73,7 @@
     {
       "name": "_loops_max",
       "description": "The amount of time before the app shuts down due to inactivity",
-      "value": "900",
+      "value": "1200",
       "type": "INT",
       "modify": "EDITABLE",
       "display": "Max NoOp",
@@ -390,7 +390,7 @@
           "condition": {
             "is": "GREATER",
             "var": "_wakeTimer",
-            "value": "60"
+            "value": "50"
           },
           "actions":[                        
             {
