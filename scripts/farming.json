@@ -625,6 +625,9 @@
 
     "_log-in-common":{
       "name": "Common - Recovery Log In (Override)",
+      "includes": [
+        "_arena-menu-begin"
+      ],
       "statements": [
         {
           "condition": {
