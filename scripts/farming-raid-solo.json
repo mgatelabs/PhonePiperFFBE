@@ -751,8 +751,7 @@
               "type": "TAP",
               "value": "battle-auto",
               "count": "2"
-            },
-            ,
+            },            
             {
               "type": "REPEAT",
               "value": ""
