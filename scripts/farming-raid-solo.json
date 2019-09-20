@@ -317,7 +317,7 @@
         {"name": "Unit 6", "value": "5"},
         {"name": "Auto", "value": "-2"}
       ],
-      "description": "The job for unit 1"
+      "description": "The job for unit 6"
     }
 
   ],
@@ -728,6 +728,15 @@
               "args": {
                 "index": "${raid-tap-5}"
               }
+            },
+            {
+              "condition": {
+                "not": "EQUAL",
+                "var": "raid-tap-5",
+                "value": "-2"
+              },
+              "type": "INFO",
+              "value": "Auto"
             },
             {
               "condition": {
