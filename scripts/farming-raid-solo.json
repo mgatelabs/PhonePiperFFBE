@@ -731,7 +731,7 @@
             },
             {
               "condition": {
-                "not": "EQUAL",
+                "is": "EQUAL",
                 "var": "raid-tap-5",
                 "value": "-2"
               },
@@ -740,7 +740,7 @@
             },
             {
               "condition": {
-                "not": "EQUAL",
+                "is": "EQUAL",
                 "var": "raid-tap-5",
                 "value": "-2"
               },
