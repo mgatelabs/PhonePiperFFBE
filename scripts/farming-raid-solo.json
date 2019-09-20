@@ -730,6 +730,10 @@
               }
             },
             {
+              "type": "BATCH",
+              "value": "END"
+            },
+            {
               "condition": {
                 "is": "EQUAL",
                 "var": "raid-tap-5",
@@ -748,10 +752,7 @@
               "value": "battle-auto",
               "count": "2"
             },
-            {
-              "type": "BATCH",
-              "value": "END"
-            },
+            ,
             {
               "type": "REPEAT",
               "value": ""
