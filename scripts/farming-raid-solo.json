@@ -314,7 +314,8 @@
         {"name": "Unit 3", "value": "2"},
         {"name": "Unit 4", "value": "3"},
         {"name": "Unit 5", "value": "4"},
-        {"name": "Unit 6", "value": "5"}
+        {"name": "Unit 6", "value": "5"},
+        {"name": "Auto", "value": "-2"}
       ],
       "description": "The job for unit 1"
     }
@@ -713,13 +714,30 @@
               "condition": {
                 "not": "EQUAL",
                 "var": "raid-tap-5",
-                "value": "-1"
+                "value": "-1",
+                "and": [
+                  {
+                    "not": "EQUAL",
+                    "var": "raid-tap-5",
+                    "value": "-2"
+                  }
+                ]
               },
               "type": "CALL",
               "value": "@tapUnit",
               "args": {
                 "index": "${raid-tap-5}"
               }
+            },
+            {
+              "condition": {
+                "not": "EQUAL",
+                "var": "raid-tap-5",
+                "value": "-2"
+              },
+              "type": "TAP",
+              "value": "battle-auto",
+              "count": "2"
             },
             {
               "type": "BATCH",
