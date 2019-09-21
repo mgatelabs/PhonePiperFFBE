@@ -741,6 +741,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - News - Summon 2",
+    "screenId" : "menu-news-summon_2",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Play Mission",
     "screenId" : "menu-play_mission",
     "points" : [ ],
@@ -2115,6 +2120,14 @@
   }, {
     "name" : "Menu - News - Summon - Close",
     "componentId" : "menu-news-summon-close",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - News - Summon 2 - Close",
+    "componentId" : "menu-news-summon_2-close",
     "x" : 0,
     "y" : 0,
     "w" : 1,
