@@ -267,7 +267,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Units were changed, Tapping in order"
+              "value": "Attacking"
             },
             { "type": "CALL", "value": "@keepAlive" },
             {
@@ -275,39 +275,9 @@
               "value": "start"
             },
             {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "4"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "1"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "0"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "2"
-              }
+              "type": "TAP",
+              "value": "battle-auto",
+              "count": "2"
             },
             {
               "type": "BATCH",
@@ -323,37 +293,8 @@
               "value": ""
             }
           ]
-        },
-
-        {
-          "condition": {
-            "is": "CALL",
-            "value": "@isBattleReady",
-            "and": [
-              { "is": "EQUAL", "value": "3", "var":"segment"}
-            ]
-          },
-          "actions": [
-            {
-              "type": "INFO",
-              "value": "No unit changes, Hit Repeat"
-            },
-            { "type": "CALL", "value": "@keepAlive" },
-            {
-              "type": "TAP",
-              "value": "battle-repeat"
-            },
-            {
-              "type": "SET",
-              "var": "segment",
-              "value": "4"
-            },
-            {
-              "type": "REPEAT",
-              "value": ""
-            }
-          ]
         }
+
       ]
     },
 
