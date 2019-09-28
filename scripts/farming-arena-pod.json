@@ -1,0 +1,514 @@
+//@formatter:off
+{
+    "vars": [
+      {
+        "name": "arena-pod_1-on",
+        "display": "1 - Active",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 10,
+        "tierId": "arena-pod-153",
+        "description": "Is this unit active?",
+        "values": [
+            {"name": "Off", "value": "0"},
+            {"name": "On", "value": "1"}
+        ]
+      },
+      {
+        "name": "arena-pod_1-col",
+        "display": "1 - Ability Column",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 11,
+        "tierId": "arena-pod-153",
+        "description": "The column location of the skill, 0 for left, 1 for right",
+        "values": [
+          {"name": "Left", "value": "0"},
+          {"name": "Right", "value": "1"}
+        ]
+      },
+      {
+      "name": "arena-pod_1-row",
+      "display": "1 - Ability Row",
+      "value": "0",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "order": 11,
+      "tierId": "arena-pod-153",
+      "description": "The row location of the skill, The first row is 0"
+      },
+      {
+        "name": "arena-pod_2-on",
+        "display": "2 - Active",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 20,
+        "tierId": "arena-pod-153",
+        "description": "Is this unit active?",
+        "values": [
+            {"name": "Off", "value": "0"},
+            {"name": "On", "value": "1"}
+        ]
+      },
+      {
+        "name": "arena-pod_2-col",
+        "display": "2 - Ability Column",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 21,
+        "tierId": "arena-pod-153",
+        "description": "The column location of the skill, 0 for left, 1 for right",
+        "values": [
+          {"name": "Left", "value": "0"},
+          {"name": "Right", "value": "1"}
+        ]
+      },
+      {
+      "name": "arena-pod_2-row",
+      "display": "2 - Ability Row",
+      "value": "0",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "order": 21,
+      "tierId": "arena-pod-153",
+      "description": "The row location of the skill, The first row is 0"
+      },
+      {
+        "name": "arena-pod_3-on",
+        "display": "3 - Active",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 30,
+        "tierId": "arena-pod-153",
+        "description": "Is this unit active?",
+        "values": [
+            {"name": "Off", "value": "0"},
+            {"name": "On", "value": "1"}
+        ]
+      },
+      {
+        "name": "arena-pod_3-col",
+        "display": "3 - Ability Column",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 31,
+        "tierId": "arena-pod-153",
+        "description": "The column location of the skill, 0 for left, 1 for right",
+        "values": [
+          {"name": "Left", "value": "0"},
+          {"name": "Right", "value": "1"}
+        ]
+      },
+      {
+      "name": "arena-pod_3-row",
+      "display": "3 - Ability Row",
+      "value": "0",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "order": 31,
+      "tierId": "arena-pod-153",
+      "description": "The row location of the skill, The first row is 0"
+      },
+      {
+        "name": "arena-pod_5-on",
+        "display": "5 - Active",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 50,
+        "tierId": "arena-pod-153",
+        "description": "Is this unit active?",
+        "values": [
+            {"name": "Off", "value": "0"},
+            {"name": "On", "value": "1"}
+        ]
+      },
+      {
+        "name": "arena-pod_5-col",
+        "display": "3 - Ability Column",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "order": 51,
+        "tierId": "arena-pod-153",
+        "description": "The column location of the skill, 0 for left, 1 for right",
+        "values": [
+          {"name": "Left", "value": "0"},
+          {"name": "Right", "value": "1"}
+        ]
+      },
+      {
+      "name": "arena-pod_5-row",
+      "display": "3 - Ability Row",
+      "value": "0",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "order": 51,
+      "tierId": "arena-pod-153",
+      "description": "The row location of the skill, The first row is 0"
+      }
+
+    ],
+    "varTiers": [
+      {"title":"Pod 153", "id":"arena-pod-153", "tabId":"arena"}
+    ],
+    "imports": [
+  
+    ],
+    "states": {
+  
+      // Pod 153 - Position 1, Index 0
+      "_arena-battle-fight-abilities-include_0": {
+        "name": "Arena - Battle - Abilities - For Slot 1,2,3,5",
+        "description": "Setup your units to attack - For Slot 1,2,3,5",
+        "variables": {
+        },
+        "statements": [
+          {
+            "condition": {
+                "is": "CALL",
+                "value": "@isPodPositionNotSetup",
+                "args": {
+                    "index": "0"
+                }
+            },
+            "actions": [
+              {
+                "type": "CALL",
+                "value": "@pod153_action",
+                "args": {
+                  "index": "0"
+                }
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "condition": {
+                "is": "CALL",
+                "value": "@isPodPositionNotSetup",
+                "args": {
+                    "index": "1"
+                }
+            },
+            "actions": [
+              {
+                "type": "CALL",
+                "value": "@pod153_action",
+                "args": {
+                  "index": "1"
+                }
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "condition": {
+                "is": "CALL",
+                "value": "@isPodPositionNotSetup",
+                "args": {
+                    "index": "2"
+                }
+            },
+            "actions": [
+              {
+                "type": "CALL",
+                "value": "@pod153_action",
+                "args": {
+                  "index": "2"
+                }
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "condition": {
+                "is": "CALL",
+                "value": "@isPodPositionNotSetup",
+                "args": {
+                    "index": "4"
+                }
+            },
+            "actions": [
+              {
+                "type": "CALL",
+                "value": "@pod153_action",
+                "args": {
+                  "index": "4"
+                }
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+  
+      "@pod153_action": {
+        "name": "Pod  153 Setup Logic",
+        "description": "Setup your units to attack - For Slot 1,2,3,5",
+        "variables":{
+            "index":{
+              "value":"-1",
+              "type": "INT"
+            }
+          },
+        "statements": [
+          {
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Setting Up Pod 153 - Index ${index}"
+              },
+              {
+                "type": "SET",
+                "var": "modified",
+                "value": "1"
+              },
+              {
+                "type": "CALL",
+                "value": "@setUnitAttempted",
+                "args": {
+                  "index": "${index}"
+                }
+              },
+              {
+                "type": "CALL",
+                "value": "@showUnitActions",
+                "args": {
+                  "index": "${index}"
+                }
+              },
+              {
+                "condition":{
+                    "is":"EQUAL",
+                    "var": "index",
+                    "value": "0"
+                },
+                "type": "CALL",
+                "value": "@selectUnitAction",
+                "args": {
+                  "row": "${arena-pod_1-row}",
+                  "column": "${arena-pod_1-col}"
+                }
+              },
+              {
+                "condition":{
+                    "is":"EQUAL",
+                    "var": "index",
+                    "value": "1"
+                },
+                "type": "CALL",
+                "value": "@selectUnitAction",
+                "args": {
+                  "row": "${arena-pod_2-row}",
+                  "column": "${arena-pod_2-col}"
+                }
+              },
+              {
+                "condition":{
+                    "is":"EQUAL",
+                    "var": "index",
+                    "value": "2"
+                },
+                "type": "CALL",
+                "value": "@selectUnitAction",
+                "args": {
+                  "row": "${arena-pod_3-row}",
+                  "column": "${arena-pod_3-col}"
+                }
+              },
+              {
+                "condition":{
+                    "is":"EQUAL",
+                    "var": "index",
+                    "value": "4"
+                },
+                "type": "CALL",
+                "value": "@selectUnitAction",
+                "args": {
+                  "row": "${arena-pod_5-row}",
+                  "column": "${arena-pod_5-col}"
+                }
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              }
+            ]
+          }
+        ]
+      },
+
+      "@isPodPositionNotSetup":{
+        "name": "Is Unit Not Setup For Pod",
+        "variables":{
+          "index":{
+            "value":"-1",
+            "type": "INT"
+          }
+        },
+        "statements":[
+          {                
+            "actions": [
+                {
+                "condition": {
+                    "is": "CALL",
+                    "value": "@isBattleReady",
+                    "and": [
+                        {
+                            "is": "EQUAL",
+                            "value": "2",
+                            "var": "segment"
+                        },
+                        {
+                            "is": "CALL",
+                            "value": "@isUnitNotAttempted",
+                            "args": {
+                                "index": "${index}"
+                            }
+                        },
+                        {
+                            "is": "CALL",
+                            "value": "@isPod153UnitActive",
+                            "args": {
+                                "index": "${index}"
+                            }
+                        },
+                        {
+                            "is": "CALL",
+                            "value": "@isUnitReady",
+                            "args": {
+                                "index": "${index}"
+                            }
+                        },
+                        {
+                            "is": "CALL",
+                            "value": "@unitHasMp",
+                            "args": {
+                                "index": "${index}"
+                            }
+                        },
+                        {
+                            "not": "CALL",
+                            "value": "@isUnitActionReady",
+                            "args": {
+                                "index": "${index}"
+                            }
+                        }
+                    ]
+                },
+                "type": "RETURN",
+                "value": "1"
+                },
+                {
+                "type": "RETURN",
+                "value": "0"
+                }
+            ]
+          }
+        ]
+      },
+
+      "@isPod153UnitActive":{
+        "name": "Is Pod 153 Unit Active?",
+        "variables":{
+          "index":{
+            "value":"-1",
+            "type": "INT"
+          }
+        },
+        "statements":[
+          {
+            "actions":[
+              {
+                "condition":{
+                  "is":"EQUAL",
+                  "var":"index",
+                  "value": "0",
+                  "and":[
+                    {
+                      "is":"EQUAL",
+                      "var":"arena-pod_1-on",
+                      "value":"1"
+                    }
+                  ]
+                },
+                "type":"RETURN",
+                "value": "1"
+              },
+              {
+                "condition":{
+                  "is":"EQUAL",
+                  "var":"index",
+                  "value": "1",
+                  "and":[
+                    {
+                      "is":"EQUAL",
+                      "var":"arena-pod_2-on",
+                      "value":"1"
+                    }
+                  ]
+                },
+                "type":"RETURN",
+                "value": "1"
+              },{
+                "condition":{
+                  "is":"EQUAL",
+                  "var":"index",
+                  "value": "2",
+                  "and":[
+                    {
+                      "is":"EQUAL",
+                      "var":"arena-pod_3-on",
+                      "value":"1"
+                    }
+                  ]
+                },
+                "type":"RETURN",
+                "value": "1"
+              },
+              {
+                "condition":{
+                  "is":"EQUAL",
+                  "var":"index",
+                  "value": "4",
+                  "and":[
+                    {
+                      "is":"EQUAL",
+                      "var":"arena-pod_5-on",
+                      "value":"1"
+                    }
+                  ]
+                },
+                "type":"RETURN",
+                "value": "1"
+              },
+              {
+                "type":"RETURN",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      }
+
+    }
+  }
