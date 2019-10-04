@@ -470,6 +470,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Expedition - Cancel",
+    "screenId" : "menu-expedition-cancel",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Expedition - Confirm",
     "screenId" : "menu-expedition-confirm",
     "points" : [ ],
@@ -1712,6 +1717,14 @@
   }, {
     "name" : "Menu - Expedition - Auto fill",
     "componentId" : "menu-expedition-auto_fill",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Expedition - Cancel - NO",
+    "componentId" : "menu-expedition-cancel-no",
     "x" : 0,
     "y" : 0,
     "w" : 1,
