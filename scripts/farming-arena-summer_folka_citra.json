@@ -6,7 +6,7 @@
       "display": "Unit Position",
       "description": "The position of the unit",
       "value": "1",
-      "type": "INT", "modify": "EDITABLE", "order": 10, "tierId": "arena-me_1", "values": [ {"name": "1", "value": "0"}, {"name": "2", "value": "1"}, {"name": "3", "value": "2"}, {"name": "4", "value": "3"}, {"name": "5", "value": "4"}]
+      "type": "INT", "modify": "EDITABLE", "tierId": "arena-sfc", "order": 10, "values": [ {"name": "1", "value": "0"}, {"name": "2", "value": "1"}, {"name": "3", "value": "2"}, {"name": "4", "value": "3"}, {"name": "5", "value": "4"}]
     },
     {
       "name": "arena-sfc-twice_col",
