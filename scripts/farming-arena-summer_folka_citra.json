@@ -2,13 +2,20 @@
 {
   "vars": [
     {
-      "name": "arena-sfc_4-twice_col",
+      "name": "arena-sfc-position",
+      "display": "Unit Position",
+      "description": "The position of the unit",
+      "value": "1",
+      "type": "INT", "modify": "EDITABLE", "order": 10, "tierId": "arena-me_1", "values": [ {"name": "1", "value": "0"}, {"name": "2", "value": "1"}, {"name": "3", "value": "2"}, {"name": "4", "value": "3"}, {"name": "5", "value": "4"}]
+    },
+    {
+      "name": "arena-sfc-twice_col",
       "display": "Double Amusement - Column",
       "value": "0",
       "type": "INT",
       "modify": "EDITABLE",
       "order": 10,
-      "tierId": "arena-sfc_4",
+      "tierId": "arena-sfc",
       "description": "The column location of the skill, 0 for left, 1 for right",
       "values": [
         {"name": "Left", "value": "0"},
@@ -16,23 +23,23 @@
       ]
     },
     {
-      "name": "arena-sfc_4-twice_row",
+      "name": "arena-sfc-twice_row",
       "display": "Double Amusement - Row",
       "value": "0",
       "type": "INT",
       "modify": "EDITABLE",
       "order": 10,
-      "tierId": "arena-sfc_4",
+      "tierId": "arena-sfc",
       "description": "The row location of the skill, The first row is 0"
     },
     {
-      "name": "arena-sfc_4-hts_col",
+      "name": "arena-sfc-hts_col",
       "display": "High Tide Spirit - Column",
       "value": "0",
       "type": "INT",
       "modify": "EDITABLE",
       "order": 10,
-      "tierId": "arena-sfc_4",
+      "tierId": "arena-sfc",
       "description": "The column location of the skill, 0 for left, 1 for right",
       "values": [
         {"name": "Left", "value": "0"},
@@ -40,28 +47,28 @@
       ]
     },
     {
-      "name": "arena-sfc_4-hts_row",
+      "name": "arena-sfc-hts_row",
       "display": "High Tide Spirit - Row",
       "value": "0",
       "type": "INT",
       "modify": "EDITABLE",
       "order": 10,
-      "tierId": "arena-sfc_4",
+      "tierId": "arena-sfc",
       "description": "The row location of the skill, The first row is 0"
     }
   ],
   "varTiers": [
-    {"title":"Summer Folka & Citra - 5", "id":"arena-sfc_4", "tabId":"arena"}
+    {"title":"Summer Folka & Citra - 5", "id":"arena-sfc", "tabId":"arena"}
   ],
   "imports": [
 
   ],
   "states": {
 
-    // Lillity - Position 5, Index 4
-    "_arena-battle-fight-abilities-include_4": {
-      "name": "Arena - Battle - Abilities - Summer Folka Citra - 6",
-      "description": "Setup your units to attack - Summer Folka Citra - 5",
+    // Lillity - Position Any
+    "_arena-battle-fight-abilities-include_sfc": {
+      "name": "Arena - Battle - Abilities - Summer Folka Citra",
+      "description": "Setup your units to attack - Summer Folka Citra",
       "variables": {
       },
       "statements": [
@@ -86,21 +93,21 @@
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbSelected",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               }
             ]
@@ -108,7 +115,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Summer F/C - Position 5 - LB"
+              "value": "Setting Up Summer F/C - Index ${arena-sfc-position} - LB"
             },
             {
               "type": "ADD",
@@ -120,7 +127,7 @@
                 "not": "CALL",
                 "value": "@readyUnitLbSafely",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               "type": "REPEAT"
@@ -144,15 +151,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-sfc-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
@@ -169,21 +178,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               }
             ]
@@ -191,7 +200,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Summer F/C - Position 5 - High Tide Spirit X 2"
+              "value": "Setting Up Summer F/C - Index ${arena-sfc-position} - High Tide Spirit X 2"
             },
             {
               "type": "SET",
@@ -199,15 +208,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-sfc-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-sfc-position}"
               }
             },
             {
@@ -215,11 +226,11 @@
                 "is": "CALL",
                 "value": "@readyMultiCastSafely",
                 "args": {
-                  "index": "4",
-                  "row0": "${arena-sfc_4-twice_row}",
-                  "column0": "${arena-sfc_4-twice_col}",
-                  "row1": "${arena-sfc_4-hts_row}",
-                  "column1": "${arena-sfc_4-hts_col}",
+                  "index": "${arena-sfc-position}",
+                  "row0": "${arena-sfc-twice_row}",
+                  "column0": "${arena-sfc-twice_col}",
+                  "row1": "${arena-sfc-hts_row}",
+                  "column1": "${arena-sfc-hts_col}",
                   "times": "2"
                 }
               },
@@ -246,15 +257,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-sfc-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
@@ -266,21 +279,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-sfc-position}"
                 }
               }
             ]
@@ -288,7 +301,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Summer F/C - Position 5 - High Tide Spirit"
+              "value": "Setting Up Summer F/C - Index ${arena-sfc-position} - High Tide Spirit"
             },
             {
               "type": "SET",
@@ -296,15 +309,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-sfc-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-sfc-position}"
               }
             },
             {
@@ -312,9 +327,9 @@
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "4",
-                  "row0": "${arena-sfc_4-hts_row}",
-                  "column0": "${arena-sfc_4-hts_col}"
+                  "index": "${arena-sfc-position}",
+                  "row0": "${arena-sfc-hts_row}",
+                  "column0": "${arena-sfc-hts_col}"
                 }
               },
               "type": "REPEAT",
