@@ -358,6 +358,36 @@
           ]
         }
       ]
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Recovery
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    "_log-in-once-arena": {
+      "name": "Arena - Recovery",
+      "description":"Recover to Arena",
+      "variables": {
+
+      },
+      "statements": [
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "game-battle"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Battle Screen, switching to Arena..."
+            },
+            {
+              "type": "MOVE",
+              "value": "arena-battle-fight"
+            }
+          ]
+        }
+      ]
     }
 
   }

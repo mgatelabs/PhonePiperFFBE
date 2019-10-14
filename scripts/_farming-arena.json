@@ -868,6 +868,46 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "battle-menu-arena"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Battle Menu Open At Wrong Time: Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "battle-menu-back"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "battle-actions"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Action Menu Open At Wrong Time: Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "battle-actions-back"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "battle-enemy_bar",
             "and": [
               {
@@ -1012,7 +1052,7 @@
               {
                 "var": "enemy_health_seen",
                 "is": "LESS",
-                "value": "4"
+                "value": "50"
               },
               {
                 "var": "_loops",
