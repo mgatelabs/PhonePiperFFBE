@@ -539,6 +539,10 @@
               "value": "menu-worlds"
             },
             {
+              "type": "WAIT",
+              "value": "3000"
+            },
+            {
               "type": "REPEAT",
               "value": "false"
             }
