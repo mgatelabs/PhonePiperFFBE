@@ -138,6 +138,17 @@
         {"name": "Emulated", "value": "1"},
         {"name": "Physical", "value": "0"}
       ]
+    },
+    {
+      "name": "_failure-mode",
+      "display" : "Failure Mode",
+      "value": "0",
+      "type": "INT",
+      "modify":"EDITABLE",
+      "values":[
+        {"name": "Stop", "value": "0"},
+        {"name": "Reboot", "value": "1"}
+      ]
     }
   ],
   "varTiers": [
@@ -150,6 +161,200 @@
       "description": "!",
       "includes": [
         "_common-power_down"
+      ]
+    },
+    "reboot": {
+      "name": "Reboot",
+      "description": "Restart the Device and Wait for it to come back online",
+      "variables": {
+        "step": {
+          "type":"INT",
+          "value":"0"
+        }
+      },
+      "statements": [
+
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var":"step",
+            "value":"0",
+            "and":[
+              {
+                "not":"DEVICE",
+                "value":"CONNECTED"
+              }
+            ]
+          },
+          "actions":[
+            {
+              "type": "INFO",
+              "value": "Device connection down, restarting connection"
+            },
+            {
+              "type": "DEVICE",
+              "value": "restart"
+            },
+            {
+              "type": "INFO",
+              "value": "Waiting 6 Seconds"
+            },
+            {
+              "type": "WAIT",
+              "value": "6000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var":"step",
+            "value":"0"
+          },
+          "actions":[
+            {
+              "type": "INFO",
+              "value": "Rebooting"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "DEVICE",
+              "value": "REBOOT"
+            },
+            {
+              "type": "SET",
+              "var": "step",
+              "value": "1"
+            },
+            {
+              "type": "INFO",
+              "value": "Waiting 45 Seconds"
+            },
+            {
+              "type": "WAIT",
+              "value": "45000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var":"step",
+            "value":"1",
+            "and":[
+              {
+                "is":"DEVICE",
+                "value":"CONNECTED"
+              },
+              {
+                "is":"DEVICE",
+                "value":"RUNNING"
+              }
+            ]
+          },
+          "actions":[
+            {
+              "type": "INFO",
+              "value": "Device has a connection and App is open"
+            },
+            {
+              "type": "SET",
+              "var": "step",
+              "value": "2"
+            },
+            {
+              "type":"EVENT",
+              "value":"wakeup"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "MOVE",
+              "value": "log-in"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var":"step",
+            "value":"1",
+            "and":[
+              {
+                "is":"DEVICE",
+                "value":"CONNECTED"
+              },
+              {
+                "not":"DEVICE",
+                "value":"RUNNING"
+              }
+            ]
+          },
+          "actions":[
+            {
+              "type": "INFO",
+              "value": "Device has a connection, Opening App"
+            },
+            {
+              "type": "APP",
+              "value": "CHECK"
+            },
+            {
+              "type": "INFO",
+              "value": "Waiting 10 Seconds"
+            },
+            {
+              "type": "WAIT",
+              "value": "10000"
+            },
+            {
+              "type":"EVENT",
+              "value":"wakeup"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is":"EQUAL",
+            "var":"step",
+            "value":"1"
+          },
+          "actions":[
+            {
+              "type": "INFO",
+              "value": "Device connection down, restarting connection"
+            },
+            {
+              "type": "DEVICE",
+              "value": "restart"
+            },
+            {
+              "type": "INFO",
+              "value": "Waiting 6 Seconds"
+            },
+            {
+              "type": "WAIT",
+              "value": "6000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        }
+
       ]
     },
     "recovery": {
@@ -764,12 +969,19 @@
           "condition": {
             "var": "_loops",
             "is": "GREATER",
-            "value": "${_loops_max}"
+            "value": "${_loops_max}",
+            "and": [
+              {
+                "var": "_failure-mode",
+                "is": "EQUAL",
+                "value": "0"
+              }
+            ]
           },
           "actions": [
             {
               "type": "INFO",
-              "value": "Too many cycles ${_loops}, stopping run"
+              "value": "Too many cycles ${_loops}, stopping app"
             },
             // Reset the counter, so the app will run after turning it back on
             {
@@ -780,6 +992,36 @@
             {
               "type": "STOP",
               "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "var": "_loops",
+            "is": "GREATER",
+            "value": "${_loops_max}",
+            "and": [
+              {
+                "var": "_failure-mode",
+                "is": "EQUAL",
+                "value": "1"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Too many cycles ${_loops}, rebooting device"
+            },
+            // Reset the counter, so the app will run after turning it back on
+            {
+              "type": "SET",
+              "var": "_loops",
+              "value": "0"
+            },
+            {
+              "type": "MOVE",
+              "value": "reboot"
             }
           ]
         }
