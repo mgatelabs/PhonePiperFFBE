@@ -861,6 +861,16 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Reward Wheel - Screen",
+    "screenId" : "menu-rw-screen",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Spin",
+    "screenId" : "menu-rw-spin",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Special Reward - 0",
     "screenId" : "menu-special_reward-0",
     "points" : [ ],
@@ -2253,6 +2263,14 @@
   }, {
     "name" : "Menu - Return Title - Yes",
     "componentId" : "menu-return_title-yes",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Spin",
+    "componentId" : "menu-rw-spin",
     "x" : 0,
     "y" : 0,
     "w" : 1,
