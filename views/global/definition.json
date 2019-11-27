@@ -395,6 +395,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Common - Home",
+    "screenId" : "menu-common-home",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Companion Changed",
     "screenId" : "menu-companion_changed",
     "points" : [ ],
@@ -861,6 +866,21 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Reward Wheel - Confirm",
+    "screenId" : "menu-rw-confirm",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - No Ads",
+    "screenId" : "menu-rw-no_ads",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Reward",
+    "screenId" : "menu-rw-reward",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Reward Wheel - Screen",
     "screenId" : "menu-rw-screen",
     "points" : [ ],
@@ -868,6 +888,11 @@
   }, {
     "name" : "Menu - Reward Wheel - Spin",
     "screenId" : "menu-rw-spin",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure",
+    "screenId" : "menu-rw-treasure",
     "points" : [ ],
     "enabled" : false
   }, {
@@ -1621,6 +1646,14 @@
     "h" : 1,
     "enabled" : false
   }, {
+    "name" : "Menu - Common - Home",
+    "componentId" : "menu-common-home",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Companion Changed - OK",
     "componentId" : "menu-companion_changed-ok",
     "x" : 402,
@@ -2021,6 +2054,14 @@
     "h" : 1,
     "enabled" : false
   }, {
+    "name" : "Menu - Home - Rewards",
+    "componentId" : "menu-home-rewards",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Home Special",
     "componentId" : "menu-home-special",
     "x" : 0,
@@ -2269,8 +2310,48 @@
     "h" : 1,
     "enabled" : false
   }, {
+    "name" : "Menu - Reward Wheel - Confirm",
+    "componentId" : "menu-rw-confirm",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Reward Wheel - Spin",
     "componentId" : "menu-rw-spin",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Spin - Back",
+    "componentId" : "menu-rw-spin-back",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure",
+    "componentId" : "menu-rw-treasure",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure - Claim",
+    "componentId" : "menu-rw-treasure-claim",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure - X",
+    "componentId" : "menu-rw-treasure-x",
     "x" : 0,
     "y" : 0,
     "w" : 1,

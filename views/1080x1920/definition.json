@@ -5351,6 +5351,101 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Common - Home",
+    "screenId" : "menu-common-home",
+    "points" : [ {
+      "x" : 83,
+      "y" : 1758,
+      "r" : 35,
+      "g" : 163,
+      "b" : 254
+    }, {
+      "x" : 81,
+      "y" : 1758,
+      "r" : 31,
+      "g" : 158,
+      "b" : 251
+    }, {
+      "x" : 85,
+      "y" : 1758,
+      "r" : 31,
+      "g" : 160,
+      "b" : 251
+    }, {
+      "x" : 83,
+      "y" : 1764,
+      "r" : 38,
+      "g" : 166,
+      "b" : 253
+    }, {
+      "x" : 81,
+      "y" : 1764,
+      "r" : 34,
+      "g" : 166,
+      "b" : 251
+    }, {
+      "x" : 85,
+      "y" : 1764,
+      "r" : 43,
+      "g" : 172,
+      "b" : 255
+    }, {
+      "x" : 70,
+      "y" : 1798,
+      "r" : 0,
+      "g" : 1,
+      "b" : 6
+    }, {
+      "x" : 70,
+      "y" : 1800,
+      "r" : 0,
+      "g" : 1,
+      "b" : 6
+    }, {
+      "x" : 70,
+      "y" : 1802,
+      "r" : 0,
+      "g" : 1,
+      "b" : 6
+    }, {
+      "x" : 72,
+      "y" : 1800,
+      "r" : 0,
+      "g" : 1,
+      "b" : 6
+    }, {
+      "x" : 48,
+      "y" : 1819,
+      "r" : 4,
+      "g" : 120,
+      "b" : 221
+    }, {
+      "x" : 48,
+      "y" : 1821,
+      "r" : 4,
+      "g" : 120,
+      "b" : 221
+    }, {
+      "x" : 48,
+      "y" : 1823,
+      "r" : 4,
+      "g" : 120,
+      "b" : 221
+    }, {
+      "x" : 46,
+      "y" : 1821,
+      "r" : 4,
+      "g" : 120,
+      "b" : 223
+    }, {
+      "x" : 50,
+      "y" : 1821,
+      "r" : 4,
+      "g" : 120,
+      "b" : 221
+    } ],
+    "enabled" : true
+  }, {
     "name" : "Menu - Companion Changed",
     "screenId" : "menu-companion_changed",
     "points" : [ {
@@ -10804,7 +10899,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - home",
+    "name" : "Menu - Home",
     "screenId" : "menu-home",
     "points" : [ {
       "x" : 470,
@@ -14703,6 +14798,100 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Reward Wheel - Confirm",
+    "screenId" : "menu-rw-confirm",
+    "points" : [ {
+      "x" : 23,
+      "y" : 790,
+      "r" : 1,
+      "g" : 7,
+      "b" : 23
+    }, {
+      "x" : 57,
+      "y" : 753,
+      "r" : 1,
+      "g" : 9,
+      "b" : 32
+    }, {
+      "x" : 58,
+      "y" : 751,
+      "r" : 0,
+      "g" : 11,
+      "b" : 33
+    }, {
+      "x" : 54,
+      "y" : 754,
+      "r" : 1,
+      "g" : 9,
+      "b" : 32
+    }, {
+      "x" : 1020,
+      "y" : 749,
+      "r" : 0,
+      "g" : 11,
+      "b" : 33
+    }, {
+      "x" : 1021,
+      "y" : 753,
+      "r" : 0,
+      "g" : 9,
+      "b" : 34
+    }, {
+      "x" : 1025,
+      "y" : 754,
+      "r" : 1,
+      "g" : 9,
+      "b" : 30
+    }, {
+      "x" : 403,
+      "y" : 729,
+      "r" : 0,
+      "g" : 57,
+      "b" : 100
+    }, {
+      "x" : 403,
+      "y" : 720,
+      "r" : 0,
+      "g" : 8,
+      "b" : 27
+    }, {
+      "x" : 407,
+      "y" : 720,
+      "r" : 0,
+      "g" : 8,
+      "b" : 27
+    }, {
+      "x" : 407,
+      "y" : 729,
+      "r" : 0,
+      "g" : 57,
+      "b" : 100
+    }, {
+      "x" : 140,
+      "y" : 1303,
+      "r" : 0,
+      "g" : 7,
+      "b" : 26
+    }, {
+      "x" : 140,
+      "y" : 1326,
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    }, {
+      "x" : 140,
+      "y" : 1329,
+      "r" : 0,
+      "g" : 5,
+      "b" : 21
+    } ],
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Reward",
+    "screenId" : "menu-rw-reward",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Reward Wheel - Screen",
     "screenId" : "menu-rw-screen",
     "points" : [ {
@@ -14920,6 +15109,125 @@
       "r" : 146,
       "g" : 93,
       "b" : 1
+    } ],
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure",
+    "screenId" : "menu-rw-treasure",
+    "points" : [ {
+      "x" : 187,
+      "y" : 970,
+      "r" : 0,
+      "g" : 2,
+      "b" : 43
+    }, {
+      "x" : 183,
+      "y" : 974,
+      "r" : 0,
+      "g" : 4,
+      "b" : 41
+    }, {
+      "x" : 170,
+      "y" : 978,
+      "r" : 0,
+      "g" : 34,
+      "b" : 59
+    }, {
+      "x" : 170,
+      "y" : 968,
+      "r" : 0,
+      "g" : 80,
+      "b" : 99
+    }, {
+      "x" : 177,
+      "y" : 960,
+      "r" : 0,
+      "g" : 16,
+      "b" : 52
+    }, {
+      "x" : 184,
+      "y" : 956,
+      "r" : 0,
+      "g" : 16,
+      "b" : 52
+    }, {
+      "x" : 190,
+      "y" : 956,
+      "r" : 0,
+      "g" : 16,
+      "b" : 52
+    }, {
+      "x" : 912,
+      "y" : 1298,
+      "r" : 0,
+      "g" : 7,
+      "b" : 25
+    }, {
+      "x" : 927,
+      "y" : 1289,
+      "r" : 1,
+      "g" : 9,
+      "b" : 30
+    }, {
+      "x" : 950,
+      "y" : 1265,
+      "r" : 0,
+      "g" : 10,
+      "b" : 35
+    }, {
+      "x" : 958,
+      "y" : 878,
+      "r" : 7,
+      "g" : 36,
+      "b" : 44
+    }, {
+      "x" : 955,
+      "y" : 878,
+      "r" : 7,
+      "g" : 37,
+      "b" : 45
+    }, {
+      "x" : 961,
+      "y" : 878,
+      "r" : 6,
+      "g" : 36,
+      "b" : 44
+    }, {
+      "x" : 960,
+      "y" : 878,
+      "r" : 6,
+      "g" : 36,
+      "b" : 44
+    }, {
+      "x" : 959,
+      "y" : 852,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 957,
+      "y" : 852,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 961,
+      "y" : 852,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 959,
+      "y" : 850,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 959,
+      "y" : 854,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     } ],
     "enabled" : true
   }, {
@@ -18981,6 +19289,14 @@
     "h" : 79,
     "enabled" : true
   }, {
+    "name" : "Menu - Common - Home",
+    "componentId" : "menu-common-home",
+    "x" : 47,
+    "y" : 1774,
+    "w" : 83,
+    "h" : 56,
+    "enabled" : true
+  }, {
     "name" : "Menu - Companion Changed - OK",
     "componentId" : "menu-companion_changed-ok",
     "x" : 402,
@@ -19381,6 +19697,14 @@
     "h" : 52,
     "enabled" : true
   }, {
+    "name" : "Menu - Home - Rewards",
+    "componentId" : "menu-home-rewards",
+    "x" : 126,
+    "y" : 309,
+    "w" : 49,
+    "h" : 37,
+    "enabled" : true
+  }, {
     "name" : "Menu - Home - Special",
     "componentId" : "menu-home-special",
     "x" : 150,
@@ -19629,12 +19953,52 @@
     "h" : 57,
     "enabled" : true
   }, {
+    "name" : "Menu - Reward Wheel - Confirm",
+    "componentId" : "menu-rw-confirm",
+    "x" : 380,
+    "y" : 1137,
+    "w" : 319,
+    "h" : 91,
+    "enabled" : true
+  }, {
     "name" : "Menu - Reward Wheel - Spin",
     "componentId" : "menu-rw-spin",
     "x" : 380,
     "y" : 1252,
     "w" : 318,
     "h" : 90,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Spin - Back",
+    "componentId" : "menu-rw-spin-back",
+    "x" : 39,
+    "y" : 341,
+    "w" : 138,
+    "h" : 78,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure",
+    "componentId" : "menu-rw-treasure",
+    "x" : 950,
+    "y" : 1510,
+    "w" : 36,
+    "h" : 36,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure - Claim",
+    "componentId" : "menu-rw-treasure-claim",
+    "x" : 407,
+    "y" : 1165,
+    "w" : 275,
+    "h" : 79,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Reward Wheel - Treasure - X",
+    "componentId" : "menu-rw-treasure-x",
+    "x" : 939,
+    "y" : 832,
+    "w" : 40,
+    "h" : 40,
     "enabled" : true
   }, {
     "name" : "Menu - Special Reward - OK",

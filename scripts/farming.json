@@ -350,6 +350,27 @@
               "var": "_module"
             }
           ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-home",
+            "and": [
+              {
+                "is": "INTENT"
+              }
+            ]
+          },
+          "actions": [
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "INFO",
+              "value": "Intention to Pause has been spotted"
+            },
+            {
+              "type": "STOP"
+            }
+          ]
         }
       ]
     },
@@ -360,9 +381,72 @@
         "backupDelay": {
           "value": "INT",
           "type": "0"
+        },
+        "homeTapped": {
+          "value": "INT",
+          "type": "0"
         }
       },
       "statements": [        
+        {
+          "condition": {
+            "not": "SCREEN",
+            "value": "menu-home",
+            "and": [
+              {
+                "is": "SCREEN",
+                "value": "menu-common-home"
+              },
+              {
+                "is":"EQUAL",
+                "var":"homeTapped",
+                "value":"0"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "SET",
+              "var": "setup",
+              "value": "0"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "SET",
+              "value": "0",
+              "var": "_screen_saver"
+            },
+            {
+              "type": "SET",
+              "value": "1",
+              "var": "homeTapped"
+            },
+            {
+              "type": "TAP",
+              "value": "menu-common-home"
+            },
+            {
+              "type": "RANDOM",
+              "var": "backupDelay",
+              "args": {
+                "min": "2500",
+                "max": "3500"
+              }
+            },
+            {
+              "type": "INFO",
+              "value": "Returning home, with Home button, ${backupDelay}ms delay"
+            },
+            {
+              "type": "WAIT",
+              "value": "2500"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },      
 		    {
           "condition": {
             "not": "SCREEN",
@@ -400,7 +484,7 @@
             },
             {
               "type": "INFO",
-              "value": "Returning home with ${backupDelay}ms delay"
+              "value": "Returning home, with Common Back, ${backupDelay}ms delay"
             },
             {
               "type": "WAIT",
@@ -449,7 +533,7 @@
             },
             {
               "type": "INFO",
-              "value": "Returning home with ${backupDelay}ms delay"
+              "value": "Returning home, with Vortex Back, ${backupDelay}ms delay"
             },
             {
               "type": "WAIT",
@@ -498,7 +582,7 @@
             },
             {
               "type": "INFO",
-              "value": "Returning home with ${backupDelay}ms delay"
+              "value": "Returning home, with Friends Back, ${backupDelay}ms delay"
             },
             {
               "type": "WAIT",
@@ -547,7 +631,7 @@
             },
             {
               "type": "INFO",
-              "value": "Returning home with ${backupDelay}ms delay"
+              "value": "Returning home, with Explore Back, ${backupDelay}ms delay"
             },
             {
               "type": "WAIT",
@@ -590,7 +674,7 @@
             },
             {
               "type": "INFO",
-              "value": "Returning home with ${backupDelay}ms delay"
+              "value": "Returning home, with Back Button, ${backupDelay}ms delay"
             },
             {
               "type": "WAIT",

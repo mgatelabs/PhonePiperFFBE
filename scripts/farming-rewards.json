@@ -1,0 +1,548 @@
+//@formatter:off
+{
+    "vars": [
+      {
+        "name": "allow-rewards",
+        "display": "Rewards",
+        "value": "0",
+        "type": "INT",
+        "modify": "EDITABLE",
+        "displayType": "BOOLEAN",
+        "order": 10,
+        "tierId": "enable",
+        "values": [
+          {"name": "Disabled", "value": "0"},
+          {"name": "Enabled", "value": "1"}
+        ],
+        "description": "Control automating Rewards"
+      },
+      {
+        "name": "rewards-claimed",
+        "display": "Claimed Rewards",
+        "value": "0",
+        "type": "INT",
+        "modify": "VISIBLE",
+        "order": 10,
+        "tierId": "stats-rewards",
+        "description": "How many rewards have been claimed"
+      },
+      {
+        "name": "_route_from_rewards",
+        "display": "After Rewards",
+        "value": "GIFT",
+        "varValueId": "ROUTES",
+        "type": "STRING",
+        "modify": "EDITABLE",
+        "order": 10,
+        "tierId": "state-route",
+        "description": "Where to go next after Rewards is finished.  Default is GIFT to send gifts."
+      }
+    ],
+    "varTiers": [
+      {"title":"Rewards", "id":"stats-rewards", "tabId":"stats"}
+    ],
+    "varValues": [
+      {"group":"ROUTES", "title":"Rewards", "value":"REWARDS"}
+    ],
+    "states":{
+  
+      // Inject our code into the router
+      "_any_router_to_rewards": {
+        "name": "Any - Home Can Goto Rewards?",
+        "variables": {
+          "toState": {
+            "value": "REWARDS",
+            "type": "STRING"
+          }
+        },
+        "statements": [
+          {
+            "condition": {
+              "is": "SCREEN",
+              "value": "menu-home",
+              "and": [
+                {
+                  "is": "EQUAL",
+                  "value": "REWARDS",
+                  "var": "toState"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "SET",
+                "var": "setup",
+                "value": "0"
+              },
+              {
+                "type": "SET",
+                "value": "0",
+                "var": "_screen_saver"
+              },
+              {
+                "type": "MOVE",
+                "value": "home_to_rewards",
+                "condition": {
+                  "not": "EQUAL",
+                  "value": "0",
+                  "var": "allow-rewards"
+                }
+              },
+              {
+                "type": "SET",
+                "var": "toState",
+                "value": "${_route_from_rewards}"
+              },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          }
+        ]
+      },
+  
+      // Logic to move to expedition screen
+      "home_to_rewards": {
+        "name": "Home - To Rewards",
+        "description": "Navigate to Rewards",
+        "includes": [
+          "_home_daily_fixes",
+          "_common-no_op"
+        ],
+        "variables": {
+          "_first": {
+            "type": "INT",
+            "value": "0"
+          }
+        },
+        "statements": [
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "_first",
+              "value": "0"
+            },
+            "actions": [
+              { "type": "CALL", "value": "@keepAlive" },
+              { "type": "SET", "var": "_first", "value": "1"}
+            ]
+          },
+          {
+            "condition": {
+              "is": "SCREEN",
+              "value": "menu-home"
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Going to Rewards"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "TAP",
+                "value": "menu-home-rewards"
+              },
+              {
+                "type": "WAIT",
+                "value": "3000"
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "SCREEN",
+              "value": "menu-rw-screen"
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Found Rewards Screen"
+              },
+              {
+                "type": "MOVE",
+                "value": "rewards"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "GREATER",
+              "var": "_loops",
+              "value": "60"
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Could not find Rewards screen, switching to ${_route_from_rewards}"
+              },
+              {
+                "type": "MOVE",
+                "value": "any_to_home",
+                "args": {
+                  "toState": "${_route_from_rewards}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+  
+      // Actual expedtion logic
+      "rewards": {
+        "name": "Rewards",
+        "description": "Start inside the Rewards menu",
+        "includes": [
+          "_rewards-logic",
+          "_common-no_op"
+        ],
+        "variables": {
+          "safety": {
+            "type": "INT",
+            "value": "0"
+          }
+        },
+        "statements": [
+          // A safety switch to stop the system from getting stuck, 500 iterations
+          {
+            "actions": [
+              {
+                "type": "ADD",
+                "var": "safety",
+                "value": "1"
+              },
+              {
+                "condition": {"var":"safety", "is": "GREATER", "value": "500"},
+                "type": "MOVE", "value": "any_to_home", "args": {"toState": "${_route_from_expedition}"}
+              }
+            ]
+          }
+        ]
+      },
+  
+      "_rewards-logic": {
+        "name": "Rewards - Logic",
+        "includes": [],
+        "variables": {
+          "segment": {
+            "type": "INT",
+            "value": "0"
+          }
+        },
+        "statements": [
+          // We start at 0, try to press the rewards bucket
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "0",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-screen"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Found Rewards - Trying to claim big reward"
+              },
+              {
+                "type": "TAP",
+                "value": "menu-rw-treasure"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "0",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-treasure"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Found Treasure Dialog - Trying to claim big reward"
+              },
+              {
+                "type": "TAP",
+                "value": "menu-rw-treasure-claim"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "1"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "1",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-treasure"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Treasure screen is still visible, trying to spin"
+              },
+              {
+                "type": "TAP",
+                "value": "menu-rw-treasure-x"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "2"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "2",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-screen"
+                },
+                {
+                "is": "SCREEN",
+                "value": "menu-rw-spin"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Spin Available - First Press"
+              },
+              {
+                "type": "TAP",
+                "value": "menu-rw-spin"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "3"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "2",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-screen"
+                },
+                {
+                "not": "SCREEN",
+                "value": "menu-rw-spin"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Spin Not Available - Leaving"
+              },
+              {
+                "type": "MOVE",
+                "value": "any_to_home",
+                "args": {
+                  "toState": "${_route_from_rewards}"
+                }
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "3",
+              "and": [
+                {
+                  "is": "SCREEN",
+                  "value": "menu-rw-confirm"
+                }
+              ]
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Spin Available - Second Press"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "TAP",
+                "value": "menu-rw-confirm"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "4"
+              },
+              {
+                "type": "WAIT",
+                "value": "45000"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "EQUAL",
+              "var": "segment",
+              "value": "4"
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Should be finished"
+              },
+              {
+                "type": "EVENT",
+                "value": "back"
+              },
+              {
+                "type": "WAIT",
+                "value": "10000"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "TAP",
+                "value": "screen-center-small"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "TAP",
+                "value": "screen-center-small"
+              },
+              {
+                "type": "WAIT",
+                "value": "1000"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "TAP",
+                "value": "screen-center-small"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "5"
+              },
+              { "type": "CALL", "value": "@keepAlive" },
+              {
+                "type": "REPEAT"
+              }
+            ]
+          },
+          {
+            "condition": {
+              "is": "SCREEN",
+              "value": "menu-rw-reward"
+            },
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Claiming Reward"
+              },
+              {
+                "type": "TAP",
+                "value": "menu-results-next"
+              },
+              {
+                "type": "SET",
+                "var": "segment",
+                "value": "0"
+              },
+              {
+                "type": "WAIT",
+                "value": "200"
+              },
+              {
+                "type": "REPEAT",
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+  
+      "_reset-include_rewards": {
+        "name": "Reset - Rewards",
+        "statements": [
+          {
+            "actions": [
+              {
+                "type": "INFO",
+                "value": "Reset Rewards"
+              },
+              {
+                "type": "SET",
+                "value": "0",
+                "var": "rewards-claimed"
+              }
+            ]
+          }
+        ]
+      }
+  
+    }
+  }
