@@ -508,6 +508,11 @@
                 "value": "menu-results-next"
               },
               {
+                "type": "ADD",
+                "var": "rewards-claimed",
+                "value": "1"
+              },
+              {
                 "type": "SET",
                 "var": "segment",
                 "value": "0"
