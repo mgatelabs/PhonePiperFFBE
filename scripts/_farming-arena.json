@@ -368,6 +368,29 @@
       ],
       "statements": [
         {
+          "condition": {
+            "is"    : "CALL",
+            "value" : "@arenaInScreen",
+            "and": [
+              {
+                "is": "INTENT"
+              }
+            ]
+          },
+          "actions": [
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "INFO",
+              "value": "Intention to Pause has been spotted, Going Home"
+            },
+            {
+              "type": "MOVE",
+              "value": "any_to_home",
+              "args": { "toState": "${_route_from_arena}" }
+            }
+          ]
+        },
+        {
           "actions": [
             {
               "condition": {

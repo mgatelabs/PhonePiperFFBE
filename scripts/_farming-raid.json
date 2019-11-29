@@ -198,6 +198,29 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-raid_screen",
+            "and": [
+              {
+                "is": "INTENT"
+              }
+            ]
+          },
+          "actions": [
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "INFO",
+              "value": "Intention to Pause has been spotted, Going Home"
+            },
+            {
+              "type": "MOVE",
+              "value": "any_to_home",
+              "args": { "toState": "${_route_from_raid}" }
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-raid_recovery",
             "and": [
               {
@@ -230,7 +253,7 @@
               "value": ""
             }
           ]
-        },
+        },        
         {
           "condition": {
             "is": "SCREEN",

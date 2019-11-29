@@ -36,6 +36,29 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-missions-select",
+            "and": [
+              {
+                "is": "INTENT"
+              }
+            ]
+          },
+          "actions": [
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "INFO",
+              "value": "Intention to Pause has been spotted, Going Home"
+            },
+            {
+              "type": "MOVE",
+              "value": "any_to_home",
+              "args": { "toState": "${_route_from_tmr}" }
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-energy_recovery",
             "and": [
               {
