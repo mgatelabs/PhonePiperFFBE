@@ -375,61 +375,6 @@
       ]
     },
     
-    "_intention": {
-      "name": "Intention check",
-      "description": "!",
-      "includes": [
-        "_any_router_to_*",
-        "_any_can_extra",
-        "_home_daily_fixes",
-        "_common-no_op",
-        "_backup_to_home"
-      ],
-      "variables": {
-        "toState": {
-          "value": "FARM",
-          "type": "STRING"
-        }
-      },
-      "statements":[
-        {
-          "actions": [
-            {
-              "type": "FINER",
-              "value": "Looking for logic for ${toState}"
-            },
-            // Reset the module timer
-            {
-              "type": "SET",
-              "value": "0",
-              "var": "_module"
-            }
-          ]
-        },
-        {
-          "condition": {
-            "is": "SCREEN",
-            "value": "menu-home",
-            "and": [
-              {
-                "is": "INTENT"
-              }
-            ]
-          },
-          "actions": [
-            { "type": "CALL", "value": "@keepAlive" },
-            {
-              "type": "INFO",
-              "value": "Intention to Pause has been spotted"
-            },
-            {
-              "type": "STOP"
-            }
-          ]
-        }
-      ]
-    },
-
     "_backup_to_home": {
       "name": "Include - Backup to Home Screen",
       "variables": {
@@ -701,7 +646,13 @@
         {
           "condition": {
             "not": "SCREEN",
-            "value": "menu-home"
+            "value": "menu-home",
+            "and":[
+              {
+                "is": "SAFETY",
+                "value":"BACK_BUTTON"
+              }
+            ]
           },
           "actions": [
             {
