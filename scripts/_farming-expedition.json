@@ -256,7 +256,13 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-expedition-details"
+            "value": "menu-expedition-details",
+            "and":[
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_DETAILS_X"
+              }
+            ]
           },
           "actions": [
             {
@@ -276,7 +282,13 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-expedition-cancel"
+            "value": "menu-expedition-cancel",
+            "and":[
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_CANCEL"
+              }
+            ]
           },
           "actions": [
             {
@@ -296,7 +308,13 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-expedition-max_slot_reached"
+            "value": "menu-expedition-max_slot_reached",
+            "and":[
+              {
+                "is": "SAFETY",
+                "value":"MAX_SLOT_REACHED"
+              }
+            ]
           },
           "actions": [
             {
@@ -337,6 +355,10 @@
               {
                 "is": "SCREEN",
                 "value": "menu-expedition-new"
+              },
+              {
+                "is": "SAFETY",
+                "value":"SWITCH_TO_NEW"
               }
             ]
           },
@@ -440,6 +462,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-item-3-complete"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RECEIVE_3"
+              }
             ]
           },
           "actions": [
@@ -493,6 +521,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-item-2-complete"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RECEIVE_2"
+              }
             ]
           },
           "actions": [
@@ -545,6 +579,12 @@
               {
                 "is": "SCREEN",
                 "value": "menu-expedition-item-1-complete"
+              }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RECEIVE_1"
               }
             ]
           },
@@ -604,6 +644,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-item-0_tmr"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RECEIVE_0"
+              }
             ]
           },
           "actions": [
@@ -653,6 +699,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-results-units"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_RESULTS_NEXT"
+              }
             ]
           },
           "actions": [
@@ -701,6 +753,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-depart-cave"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RECEIVING_0"
+              }
             ]
           }
           ,
@@ -729,6 +787,10 @@
                 "is": "EQUAL",
                 "var": "receiving",
                 "value": "1"
+              },
+              {
+                "is": "SAFETY",
+                "value":"RECEIVING"
               }
             ]
           },
@@ -819,6 +881,12 @@
                 "not": "SCREEN",
                 "value": "menu-expedition-item-4"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_FULL"
+              }
             ]
           },
           "actions": [
@@ -848,6 +916,10 @@
               {
                 "is": "SCREEN",
                 "value": "menu-expedition-depart-cave"
+              },
+              {
+                "is": "SAFETY",
+                "value":"BACK_BUTTON"
               }
             ]
           },
@@ -921,8 +993,11 @@
                     "value": "menu-expedition-new-0-super"
                   }
                 ]
+              },
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_NEW_0"
               }
-
             ]
           },
           "actions": [
@@ -970,7 +1045,12 @@
                   }
                 ]
               }
-
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITRION_NEW_1"
+              }
             ]
           },
           "actions": [
@@ -1009,6 +1089,12 @@
                     "value": "menu-expedition-new-0-moogle"
                   }
                 ]
+              }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_TAP_NEW_CAVE"
               }
             ]
           },
@@ -1062,7 +1148,12 @@
                   }
                 ]
               }
-
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_TAP_NEW_1"
+              }
             ]
           },
           "actions": [
@@ -1134,6 +1225,12 @@
                 "is": "SCREEN",
                 "value": "menu-expedition-depart"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_DEPART"
+              }
             ]
           },
           "actions": [
@@ -1172,6 +1269,12 @@
               {
                 "is": "SCREEN",
                 "value": "menu-expedition-depart-cave"
+              }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"MOOGLE_CAVE_DEPART"
               }
             ]
           },
@@ -1212,6 +1315,12 @@
               {
                 "is": "SCREEN",
                 "value": "menu-expedition-confirm"
+              }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"EXPEDITION_CONFIRM"
               }
             ]
           },

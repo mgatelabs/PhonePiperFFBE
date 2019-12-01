@@ -268,6 +268,12 @@
                 "var": "refresh-raid",
                 "value": "0"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RAID_START"
+              }
             ]
           },
           "actions": [
@@ -332,6 +338,12 @@
                 "not": "SCREEN",
                 "value": "menu-depart-team_${raid-party-index}"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"SWIPING"
+              }
             ]
           },
           "actions": [
@@ -358,7 +370,13 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-depart"
+            "value": "menu-depart",
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"DEPART"
+              }
+            ]
           },
           "actions": [
             {
@@ -602,6 +620,12 @@
                 "var": "raid-method",
                 "value": "0"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"GOTO_RAID"
+              }
             ]
           },
           "actions": [
@@ -638,6 +662,12 @@
                 "var": "raid-method",
                 "value": "0"
               }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RAID_TO_BANNER"
+              }
             ]
           },
           "actions": [
@@ -668,6 +698,12 @@
                 "is": "EQUAL",
                 "var": "raid-method",
                 "value": "1"
+              }
+            ],
+            "postAnd": [
+              {
+                "is": "SAFETY",
+                "value":"RAID_VORTEX"
               }
             ]
           },
