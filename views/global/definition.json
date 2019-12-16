@@ -470,6 +470,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Download Notice",
+    "screenId" : "menu-download_notice",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Energy Recovery",
     "screenId" : "menu-energy_recovery",
     "points" : [ ],
@@ -1728,6 +1733,14 @@
   }, {
     "name" : "Menu - Download Data - Yes",
     "componentId" : "menu-download_data-yes",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Download Notice - OK",
+    "componentId" : "menu-download_notice-ok",
     "x" : 0,
     "y" : 0,
     "w" : 1,
