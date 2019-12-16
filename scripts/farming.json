@@ -149,6 +149,17 @@
       "skipSave": "true",
       "tierId": "refresh",
       "description": "How many times are you alright with refreshing your NRG?  When this is greater then 0, Transition Energy is ignored."
+    },
+    {
+      "name": "_route_from_recover",
+      "display": "After Recover",
+      "value": "FARM",
+      "varValueId": "ROUTES",
+      "type": "STRING",
+      "modify": "EDITABLE",
+      "order": 10,
+      "tierId": "state-route",
+      "description": "Where to go next after Rewards is finished.  Default is GIFT to send gifts."
     }
   ],
   "varTiers": [
@@ -938,10 +949,7 @@
               "type": "INFO",
               "value": "Found Home Screen, attempting to recover..."
             },
-            {
-              "type": "MOVE",
-              "value": "any_to_home"
-            }
+            {"type": "MOVE", "value": "any_to_home", "args": {"toState": "${_route_from_recover}"}}
           ]
         }
       ]
