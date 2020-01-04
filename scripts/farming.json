@@ -846,7 +846,7 @@
             },
             {
               "type": "TAP",
-              "value": "menu-common-back"
+              "value": "menu-home-button"
             },
             {
               "type": "REPEAT",

@@ -19837,11 +19837,11 @@
   }, {
     "name" : "Menu - Home - Button",
     "componentId" : "menu-home-button",
-    "x" : 0,
-    "y" : 0,
-    "w" : 1,
-    "h" : 1,
-    "enabled" : false
+    "x" : 43,
+    "y" : 1771,
+    "w" : 95,
+    "h" : 94,
+    "enabled" : true
   }, {
     "name" : "menu-home-daily-claim",
     "componentId" : "menu-home-daily-claim",
