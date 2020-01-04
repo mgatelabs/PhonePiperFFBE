@@ -837,6 +837,26 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-rw-screen"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Rewards Screen"
+            },
+            {
+              "type": "TAP",
+              "value": "menu-common-back"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-news-summon_2"
           },
           "actions": [
