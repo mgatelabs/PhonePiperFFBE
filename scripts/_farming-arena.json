@@ -984,7 +984,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Tapping OK"
+              "value": "Tapping Results OK"
             },
             {
               "type": "TAP",
