@@ -84,6 +84,10 @@
           },
           "actions": [
             {
+              "type": "INFO",
+              "value": "Clicking through goal list"
+            },
+            {
               "type": "TAP",
               "value": "menu-goal_list-next"
             },
