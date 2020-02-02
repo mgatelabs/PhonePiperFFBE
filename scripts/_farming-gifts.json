@@ -17,7 +17,7 @@
     },{
       "name": "allow-gifts-receive",
       "display": "Receive Gifts",
-      "value": "1",
+      "value": "0",
       "type": "INT",
       "modify": "EDITABLE",
       "order": 10,
