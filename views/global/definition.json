@@ -655,6 +655,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Friends - Receive - Available",
+    "screenId" : "menu-friends-receive-available",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Friends - Send",
     "screenId" : "menu-friends-send",
     "points" : [ ],

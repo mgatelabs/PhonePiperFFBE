@@ -13,7 +13,20 @@
         {"name": "Enabled", "value": "1"},
         {"name": "Disabled", "value": "0"}
       ],
-      "description": "Enable / Disable Sending Friend Gifts"
+      "description": "Enable / Disable Sending Gifts to Friends"
+    },{
+      "name": "allow-gifts-receive",
+      "display": "Receive Gifts",
+      "value": "1",
+      "type": "INT",
+      "modify": "EDITABLE",
+      "order": 10,
+      "tierId": "enable",
+      "values": [
+        {"name": "Enabled", "value": "1"},
+        {"name": "Disabled", "value": "0"}
+      ],
+      "description": "Enable / Disable Receiving Gifts from Friends"
     },
     {
       "name": "allow-share",
@@ -240,6 +253,10 @@
         "shared": {
           "type":"INT",
           "value": "0"
+        },
+        "received": {
+          "type":"INT",
+          "value": "0"
         }
       },
       "statements": [
@@ -322,12 +339,52 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-friends-receive",
+            "and": [
+              {
+                "is": "SCREEN",
+                "value": "menu-friends-receive-available"
+              },
+              {
+                "is": "EQUAL",
+                "var": "allow-gifts-receive",
+                "value": "1"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Receive Screen with Gifts available, Receiving..."
+            },
+            {
+              "type": "TAP",
+              "value": "menu-friends-send-all"
+            },
+            {
+              "type":"SET",
+              "value": "1",
+              "var": "received"
+            },
+            {
+              "type": "WAIT",
+              "value": "1000"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "REPEAT"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-friends-receive"
           },
           "actions": [
             {
               "type": "INFO",
-              "value": "Found Receive Screen, switching to send"
+              "value": "Found Receive Screen, switching to Send"
             },
             {
               "type": "TAP",
@@ -365,6 +422,11 @@
               "value":  "menu-friends-send-all"
             },
             {
+              "condition": {
+                "is":"EQUAL",
+                "var": "received",
+                "value": "0"
+              },
               "type": "DATE",
               "args": {
                 "tz": "GMT-9",
@@ -393,6 +455,11 @@
               "value": "Nothing to send, returning"
             },
             {
+              "condition": {
+                "is":"EQUAL",
+                "var": "received",
+                "value": "0"
+              },
               "type": "DATE",
               "args": {
                 "tz": "GMT-9",
