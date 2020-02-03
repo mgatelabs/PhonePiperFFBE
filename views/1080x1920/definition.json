@@ -16972,7 +16972,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-world-lapis",
+    "name" : "Menu - World - Lapis",
     "screenId" : "menu-world-lapis",
     "points" : [ {
       "x" : 732,
