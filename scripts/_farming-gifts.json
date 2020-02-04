@@ -23,7 +23,8 @@
       "order": 10,
       "tierId": "enable",
       "values": [
-        {"name": "Enabled", "value": "1"},
+        {"name": "Enabled - Allow Overflow", "value": "1"},
+        {"name": "Enabled - Stop on Overflow", "value": "2"},
         {"name": "Disabled", "value": "0"}
       ],
       "description": "Enable / Disable Receiving Gifts from Friends"
@@ -346,9 +347,9 @@
                 "value": "menu-friends-receive-available"
               },
               {
-                "is": "EQUAL",
+                "not": "EQUAL",
                 "var": "allow-gifts-receive",
-                "value": "1"
+                "value": "0"
               }
             ]
           },
@@ -365,6 +366,74 @@
               "type":"SET",
               "value": "1",
               "var": "received"
+            },
+            {
+              "type": "WAIT",
+              "value": "1000"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "REPEAT"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-friends-overflow",
+            "and": [
+              {
+                "is": "EQUAL",
+                "var": "allow-gifts-receive",
+                "value": "1"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Overflow condition, Force Receiving..."
+            },
+            {
+              "type": "TAP",
+              "value": "menu-friends-overflow-yes"
+            },
+            {
+              "type":"SET",
+              "value": "1",
+              "var": "received"
+            },
+            {
+              "type": "WAIT",
+              "value": "1000"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "REPEAT"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-friends-overflow",
+            "and": [
+              {
+                "is": "EQUAL",
+                "var": "allow-gifts-receive",
+                "value": "2"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Overflow condition, Stop Receiving..."
+            },
+            {
+              "type":"SET",
+              "value": "0",
+              "var": "allow-gifts-receive"
             },
             {
               "type": "WAIT",

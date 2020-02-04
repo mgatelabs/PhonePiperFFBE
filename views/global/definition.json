@@ -650,6 +650,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Friends - Overflow",
+    "screenId" : "menu-friends-overflow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Friends - Receive",
     "screenId" : "menu-friends-receive",
     "points" : [ ],
@@ -1962,6 +1967,22 @@
   }, {
     "name" : "Menu - Friends - Gifts",
     "componentId" : "menu-friends-gifts",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friends - Overflow - No",
+    "componentId" : "menu-friends-overflow-no",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friends - Overflow - Yes",
+    "componentId" : "menu-friends-overflow-yes",
     "x" : 0,
     "y" : 0,
     "w" : 1,
