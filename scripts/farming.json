@@ -785,6 +785,32 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-data_cleared"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Data Cleared - Tapping OK"
+            },
+            {
+              "type": "SET",
+              "value": "0",
+              "var": "_screen_saver"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "TAP",
+              "value": "menu-data_cleared-ok"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-download_notice"
           },
           "actions": [

@@ -425,6 +425,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Data Cleared",
+    "screenId" : "menu-data_cleared",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Depart",
     "screenId" : "menu-depart",
     "points" : [ ],
@@ -1709,6 +1714,14 @@
     "h" : 1,
     "enabled" : false
   }, {
+    "name" : "Menu - Data Cleared - OK",
+    "componentId" : "menu-data_cleared-ok",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Depart - Back",
     "componentId" : "menu-depart-back",
     "x" : 38,
@@ -2623,6 +2636,14 @@
   }, {
     "name" : "Screen - Center - Top",
     "componentId" : "screen-center-top",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Screen - Top",
+    "componentId" : "screen-top",
     "x" : 0,
     "y" : 0,
     "w" : 1,
