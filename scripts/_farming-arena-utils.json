@@ -107,7 +107,7 @@
           "condition":{
             "is":"GREATER",
             "var":"safetyClick",
-            "value":"45"
+            "value":"4"
           },
           "actions":[
             {
