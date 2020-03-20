@@ -930,6 +930,27 @@
         {
           "condition": {
             "is": "SCREEN",
+            "value": "menu-menu"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Menu Screen"
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "TAP",
+              "value": "menu-common-home"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
             "value": "menu-quest_restart"
           },
           "actions": [

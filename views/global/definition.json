@@ -735,6 +735,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Menu",
+    "screenId" : "menu-menu",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Messages",
     "screenId" : "menu-messages",
     "points" : [ ],
