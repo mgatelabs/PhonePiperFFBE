@@ -308,18 +308,12 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-expedition-max_slot_reached",
-            "and":[
-              {
-                "is": "SAFETY",
-                "value":"MAX_SLOT_REACHED"
-              }
-            ]
+            "value": "menu-expedition-max_slot_reached"
           },
           "actions": [
             {
               "type": "TAP",
-              "value": "menu-expedition-max_slot_reached-no"
+              "value": "menu-expedition-max_slot_reached-yes"
             },
             {
               "type": "WAIT",

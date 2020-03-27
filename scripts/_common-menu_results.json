@@ -101,7 +101,7 @@
             { "type": "CALL", "value": "@keepAlive" },
             {
               "type": "WAIT",
-              "value": "200"
+              "value": "100"
             },
             {
               "type": "REPEAT",
@@ -128,7 +128,7 @@
             { "type": "CALL", "value": "@keepAlive" },
             {
               "type": "WAIT",
-              "value": "200"
+              "value": "100"
             },
             {
               "type": "REPEAT",

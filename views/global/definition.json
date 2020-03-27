@@ -946,6 +946,31 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Units - Team 0",
+    "screenId" : "menu-units-team_0",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 1",
+    "screenId" : "menu-units-team_1",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 2",
+    "screenId" : "menu-units-team_2",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 3",
+    "screenId" : "menu-units-team_3",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 4",
+    "screenId" : "menu-units-team_4",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Use Lapis",
     "screenId" : "menu-use_lapis",
     "points" : [ ],
@@ -1895,6 +1920,14 @@
     "h" : 1,
     "enabled" : false
   }, {
+    "name" : "Menu - Expedition - Max slot reached - Yes",
+    "componentId" : "menu-expedition-max_slot_reached-yes",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
     "name" : "Menu - Expedition - New",
     "componentId" : "menu-expedition-new",
     "x" : 0,
@@ -2449,6 +2482,46 @@
   }, {
     "name" : "Menu - Steal - Recover - Use Item",
     "componentId" : "menu-steal-recover-use_item",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 0",
+    "componentId" : "menu-units-team_0",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 1",
+    "componentId" : "menu-units-team_1",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 2",
+    "componentId" : "menu-units-team_2",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 3",
+    "componentId" : "menu-units-team_3",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Units - Team 4",
+    "componentId" : "menu-units-team_4",
     "x" : 0,
     "y" : 0,
     "w" : 1,
