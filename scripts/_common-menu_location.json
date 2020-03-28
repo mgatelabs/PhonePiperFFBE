@@ -114,7 +114,7 @@
             "and": [
               {
                 "is": "SCREEN",
-                "value": "menu-units-team_0,menu-units-team_3, menu-units-team_4"
+                "value": "menu-units-team_0,menu-units-team_3,menu-units-team_4"
               }
             ]
           },
