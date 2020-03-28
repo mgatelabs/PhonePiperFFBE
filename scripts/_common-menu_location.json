@@ -113,16 +113,16 @@
             "value": "menu-friend_select",
             "and": [
               {
-                "not": "SCREEN",
-                "value": "menu-units-team_1"
-              },
-              {
-                "not": "SCREEN",
-                "value": "menu-units-team_2"
+                "is": "SCREEN",
+                "value": "menu-units-team_0,menu-units-team_3, menu-units-team_4"
               }
             ]
           },
           "actions": [
+            {
+              "type": "INFO",
+              "value": "Switching to Event 1"
+            },
             {
               "type": "TAP",
               "value": "menu-units-team_1"
@@ -160,6 +160,10 @@
             ]
           },
           "actions": [
+            {
+              "type": "INFO",
+              "value": "Choosing Unit 3"
+            },
             {
               "type": "TAP",
               "value": "menu-friend_select-item_3"
