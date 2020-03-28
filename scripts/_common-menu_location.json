@@ -104,6 +104,79 @@
       ]
     },
 
+    "_common-ml-friend_event_bonus": {
+      "name": "Common - Friend Select Bonus",
+      "statements": [
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-friend_select",
+            "and": [
+              {
+                "not": "SCREEN",
+                "value": "menu-units-team_1"
+              },
+              {
+                "not": "SCREEN",
+                "value": "menu-units-team_2"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "TAP",
+              "value": "menu-units-team_1"
+            },
+            {
+              "type": "WAIT",
+              "value": "500"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-friend_select",
+            "andOr": [
+              {
+                "is": "SCREEN",
+                "value": "menu-units-team_1"
+              },
+              {
+                "is": "SCREEN",
+                "value": "menu-units-team_2"
+              }
+            ],
+            "and": [
+              {
+                "is": "SCREEN",
+                "value": "menu-friend_select-item_3-arrow"
+              }
+            ]
+          },
+          "actions": [
+            {
+              "type": "TAP",
+              "value": "menu-friend_select-item_3"
+            },
+            {
+              "type": "WAIT",
+              "value": "500"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+
     "_common-ml-friend_0": {
       "name": "Common - Friend Select 0",
       "statements": [

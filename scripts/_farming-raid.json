@@ -181,6 +181,7 @@
       "description": "Start in the Raid menu",
       "includes": [
         "_common-ml-goals-quick",
+        "_common-ml-friend_event_bonus",
         "_common-ml-friend_0",
         "_common-ml-friend_none",
         "_raid-find_depart_team",
@@ -326,6 +327,7 @@
         }
       ]
     },
+    
     "_raid-find_depart_team": {
       "name": "Raid - Find Depart Team",
       "statements": [

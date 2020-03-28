@@ -645,6 +645,31 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Menu - Friend Select - Item 0 - Arrow",
+    "screenId" : "menu-friend_select-item_0-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 1 - Arrow",
+    "screenId" : "menu-friend_select-item_1-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 2 - Arrow",
+    "screenId" : "menu-friend_select-item_2-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 3 - Arrow",
+    "screenId" : "menu-friend_select-item_3-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 4 - Arrow",
+    "screenId" : "menu-friend_select-item_4-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Friend Select - Steal",
     "screenId" : "menu-friend_selects-steal",
     "points" : [ ],
@@ -1998,6 +2023,30 @@
     "y" : 541,
     "w" : 995,
     "h" : 215,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 1",
+    "componentId" : "menu-friend_select-item_1",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 2",
+    "componentId" : "menu-friend_select-item_2",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 3",
+    "componentId" : "menu-friend_select-item_3",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
     "enabled" : false
   }, {
     "name" : "Menu - Friend Select - Item 4",

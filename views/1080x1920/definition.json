@@ -10779,6 +10779,31 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Friend Select - Item 0 - Arrow",
+    "screenId" : "menu-friend_select-item_0-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 1 - Arrow",
+    "screenId" : "menu-friend_select-item_1-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 2 - Arrow",
+    "screenId" : "menu-friend_select-item_2-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 3 - Arrow",
+    "screenId" : "menu-friend_select-item_3-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 4 - Arrow",
+    "screenId" : "menu-friend_select-item_4-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Friend Select - Steal",
     "screenId" : "menu-friend_selects-steal",
     "points" : [ {
@@ -20434,12 +20459,36 @@
     "h" : 207,
     "enabled" : true
   }, {
-    "name" : "Menu - friend_select-item_4",
+    "name" : "Menu - Friend Select - Item 1",
+    "componentId" : "menu-friend_select-item_1",
+    "x" : 230,
+    "y" : 950,
+    "w" : 680,
+    "h" : 170,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Friend Select - Item 2",
+    "componentId" : "menu-friend_select-item_2",
+    "x" : 320,
+    "y" : 1260,
+    "w" : 510,
+    "h" : 140,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Friend Select - Item 3",
+    "componentId" : "menu-friend_select-item_3",
+    "x" : 360,
+    "y" : 1530,
+    "w" : 460,
+    "h" : 160,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Friend Select - Item 4",
     "componentId" : "menu-friend_select-item_4",
-    "x" : 44,
-    "y" : 1679,
-    "w" : 992,
-    "h" : 211,
+    "x" : 55,
+    "y" : 1690,
+    "w" : 967,
+    "h" : 187,
     "enabled" : true
   }, {
     "name" : "Menu - Friend Select - List",

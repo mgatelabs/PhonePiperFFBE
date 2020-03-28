@@ -17721,6 +17721,49 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Friend Select - Item 0 - Arrow",
+    "screenId" : "menu-friend_select-item_0-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 1 - Arrow",
+    "screenId" : "menu-friend_select-item_1-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 2 - Arrow",
+    "screenId" : "menu-friend_select-item_2-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 3 - Arrow",
+    "screenId" : "menu-friend_select-item_3-arrow",
+    "points" : [ {
+      "x" : 361,
+      "y" : 918,
+      "r" : 68,
+      "g" : 182,
+      "b" : 29
+    }, {
+      "x" : 362,
+      "y" : 918,
+      "r" : 69,
+      "g" : 182,
+      "b" : 29
+    }, {
+      "x" : 363,
+      "y" : 918,
+      "r" : 69,
+      "g" : 181,
+      "b" : 29
+    } ],
+    "enabled" : true
+  }, {
+    "name" : "Menu - Friend Select - Item 4 - Arrow",
+    "screenId" : "menu-friend_select-item_4-arrow",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Menu - Friend Select - Steal",
     "screenId" : "menu-friend_selects-steal",
     "points" : [ {
@@ -27492,28 +27535,136 @@
   }, {
     "name" : "Menu - Units - Team 0",
     "screenId" : "menu-units-team_0",
-    "points" : [ ],
-    "enabled" : false
+    "points" : [ {
+      "x" : 30,
+      "y" : 314,
+      "r" : 36,
+      "g" : 118,
+      "b" : 80
+    }, {
+      "x" : 30,
+      "y" : 315,
+      "r" : 36,
+      "g" : 119,
+      "b" : 80
+    }, {
+      "x" : 30,
+      "y" : 316,
+      "r" : 36,
+      "g" : 121,
+      "b" : 82
+    } ],
+    "enabled" : true
   }, {
     "name" : "Menu - Units - Team 1",
     "screenId" : "menu-units-team_1",
-    "points" : [ ],
-    "enabled" : false
+    "points" : [ {
+      "x" : 414,
+      "y" : 313,
+      "r" : 37,
+      "g" : 119,
+      "b" : 81
+    }, {
+      "x" : 414,
+      "y" : 314,
+      "r" : 37,
+      "g" : 119,
+      "b" : 80
+    }, {
+      "x" : 414,
+      "y" : 315,
+      "r" : 38,
+      "g" : 121,
+      "b" : 82
+    }, {
+      "x" : 414,
+      "y" : 316,
+      "r" : 37,
+      "g" : 124,
+      "b" : 84
+    } ],
+    "enabled" : true
   }, {
     "name" : "Menu - Units - Team 2",
     "screenId" : "menu-units-team_2",
-    "points" : [ ],
-    "enabled" : false
+    "points" : [ {
+      "x" : 792,
+      "y" : 316,
+      "r" : 36,
+      "g" : 122,
+      "b" : 83
+    }, {
+      "x" : 792,
+      "y" : 315,
+      "r" : 36,
+      "g" : 120,
+      "b" : 81
+    }, {
+      "x" : 792,
+      "y" : 314,
+      "r" : 36,
+      "g" : 118,
+      "b" : 80
+    }, {
+      "x" : 792,
+      "y" : 313,
+      "r" : 37,
+      "g" : 120,
+      "b" : 82
+    } ],
+    "enabled" : true
   }, {
     "name" : "Menu - Units - Team 3",
     "screenId" : "menu-units-team_3",
-    "points" : [ ],
-    "enabled" : false
+    "points" : [ {
+      "x" : 1172,
+      "y" : 316,
+      "r" : 35,
+      "g" : 119,
+      "b" : 82
+    }, {
+      "x" : 1172,
+      "y" : 317,
+      "r" : 33,
+      "g" : 118,
+      "b" : 81
+    }, {
+      "x" : 1172,
+      "y" : 318,
+      "r" : 33,
+      "g" : 118,
+      "b" : 80
+    } ],
+    "enabled" : true
   }, {
     "name" : "Menu - Units - Team 4",
     "screenId" : "menu-units-team_4",
-    "points" : [ ],
-    "enabled" : false
+    "points" : [ {
+      "x" : 1556,
+      "y" : 315,
+      "r" : 33,
+      "g" : 112,
+      "b" : 78
+    }, {
+      "x" : 1556,
+      "y" : 316,
+      "r" : 33,
+      "g" : 114,
+      "b" : 79
+    }, {
+      "x" : 1556,
+      "y" : 317,
+      "r" : 32,
+      "g" : 115,
+      "b" : 79
+    }, {
+      "x" : 1556,
+      "y" : 318,
+      "r" : 33,
+      "g" : 115,
+      "b" : 79
+    } ],
+    "enabled" : true
   }, {
     "name" : "Menu - Use Lapis",
     "screenId" : "menu-use_lapis",
@@ -33612,6 +33763,30 @@
     "y" : 541,
     "w" : 995,
     "h" : 215,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 1",
+    "componentId" : "menu-friend_select-item_1",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 2",
+    "componentId" : "menu-friend_select-item_2",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Friend Select - Item 3",
+    "componentId" : "menu-friend_select-item_3",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
     "enabled" : false
   }, {
     "name" : "Menu - Friend Select - Item 4",
