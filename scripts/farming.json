@@ -1031,6 +1031,22 @@
               "value": ""
             }
           ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "game-battle-repeat"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Moving to Fight"
+            },
+            {
+              "type": "MOVE",
+              "value": "arena-battle-fight"
+            }
+          ]
         },        
         {
           "condition": {
