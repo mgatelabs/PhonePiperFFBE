@@ -259,7 +259,7 @@
             },
             {
               "type": "TAP",
-              "value": "units-enhance_units-fuse",
+              "value": "screen-center-small",
               "count": "3"
             },
             {
@@ -268,7 +268,7 @@
             },
             {
               "type": "TAP",
-              "value": "units-enhance_units-fuse",
+              "value": "screen-center-small",
               "count": "3"
             },
             {
@@ -280,11 +280,16 @@
           "condition": {
             "is": "SCREEN",
             "value": "units-enhance_units",
-            "and":[
+            "andOr":[
               {
                 "is": "EQUAL",
                 "var": "step",
                 "value":"5"
+              },
+              {
+                "is": "EQUAL",
+                "var": "step",
+                "value":"4"
               }
             ]
           },
@@ -318,7 +323,14 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "units-fuse"
+            "value": "units-fuse",
+            "and":[
+              {
+                "is": "EQUAL",
+                "var": "step",
+                "value":"4"
+              }
+            ]
           },
           "actions": [
             {
@@ -337,15 +349,8 @@
             },
             {
               "type": "TAP",
-              "value": "units-fuse-skip"
-            },
-            {
-              "type": "TAP",
-              "value": "units-fuse-skip"
-            },
-            {
-              "type": "TAP",
-              "value": "units-fuse-skip"
+              "value": "units-fuse-skip",
+              "count": "3"
             },
             {
               "type": "REPEAT",
