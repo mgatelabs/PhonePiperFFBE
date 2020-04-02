@@ -7749,7 +7749,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-arena-rewards",
+    "name" : "Menu - Arena - Rewards",
     "screenId" : "menu-arena-rewards",
     "points" : [ {
       "x" : 267,
@@ -12096,7 +12096,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - energy_recovery",
+    "name" : "Menu - Energy Recovery",
     "screenId" : "menu-energy_recovery",
     "points" : [ {
       "x" : 1627,
@@ -16133,42 +16133,6 @@
     "name" : "Menu - Friend Request",
     "screenId" : "menu-friend_request",
     "points" : [ {
-      "x" : 1766,
-      "y" : 394,
-      "r" : 0,
-      "g" : 10,
-      "b" : 35
-    }, {
-      "x" : 1767,
-      "y" : 394,
-      "r" : 0,
-      "g" : 10,
-      "b" : 35
-    }, {
-      "x" : 1776,
-      "y" : 394,
-      "r" : 0,
-      "g" : 10,
-      "b" : 34
-    }, {
-      "x" : 1777,
-      "y" : 394,
-      "r" : 0,
-      "g" : 10,
-      "b" : 34
-    }, {
-      "x" : 135,
-      "y" : 395,
-      "r" : 0,
-      "g" : 9,
-      "b" : 30
-    }, {
-      "x" : 136,
-      "y" : 395,
-      "r" : 0,
-      "g" : 9,
-      "b" : 30
-    }, {
       "x" : 144,
       "y" : 395,
       "r" : 0,
@@ -16193,101 +16157,29 @@
       "g" : 11,
       "b" : 36
     }, {
-      "x" : 144,
-      "y" : 397,
+      "x" : 148,
+      "y" : 399,
       "r" : 0,
       "g" : 78,
       "b" : 128
     }, {
-      "x" : 145,
-      "y" : 397,
+      "x" : 149,
+      "y" : 399,
       "r" : 0,
       "g" : 78,
       "b" : 128
     }, {
-      "x" : 155,
-      "y" : 397,
+      "x" : 151,
+      "y" : 399,
       "r" : 0,
       "g" : 84,
       "b" : 137
     }, {
-      "x" : 156,
-      "y" : 397,
+      "x" : 152,
+      "y" : 399,
       "r" : 0,
       "g" : 84,
       "b" : 137
-    }, {
-      "x" : 1766,
-      "y" : 398,
-      "r" : 0,
-      "g" : 14,
-      "b" : 42
-    }, {
-      "x" : 1767,
-      "y" : 398,
-      "r" : 0,
-      "g" : 14,
-      "b" : 42
-    }, {
-      "x" : 1776,
-      "y" : 398,
-      "r" : 0,
-      "g" : 14,
-      "b" : 40
-    }, {
-      "x" : 1777,
-      "y" : 398,
-      "r" : 0,
-      "g" : 14,
-      "b" : 40
-    }, {
-      "x" : 1785,
-      "y" : 398,
-      "r" : 0,
-      "g" : 12,
-      "b" : 38
-    }, {
-      "x" : 1786,
-      "y" : 398,
-      "r" : 0,
-      "g" : 12,
-      "b" : 38
-    }, {
-      "x" : 146,
-      "y" : 750,
-      "r" : 0,
-      "g" : 52,
-      "b" : 123
-    }, {
-      "x" : 147,
-      "y" : 750,
-      "r" : 0,
-      "g" : 52,
-      "b" : 123
-    }, {
-      "x" : 146,
-      "y" : 753,
-      "r" : 0,
-      "g" : 255,
-      "b" : 218
-    }, {
-      "x" : 147,
-      "y" : 753,
-      "r" : 0,
-      "g" : 255,
-      "b" : 218
-    }, {
-      "x" : 146,
-      "y" : 757,
-      "r" : 0,
-      "g" : 193,
-      "b" : 237
-    }, {
-      "x" : 147,
-      "y" : 757,
-      "r" : 0,
-      "g" : 193,
-      "b" : 237
     }, {
       "x" : 80,
       "y" : 770,
@@ -16313,54 +16205,6 @@
       "g" : 247,
       "b" : 238
     }, {
-      "x" : 104,
-      "y" : 770,
-      "r" : 0,
-      "g" : 146,
-      "b" : 190
-    }, {
-      "x" : 105,
-      "y" : 770,
-      "r" : 0,
-      "g" : 146,
-      "b" : 190
-    }, {
-      "x" : 1360,
-      "y" : 772,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1361,
-      "y" : 772,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1350,
-      "y" : 775,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1351,
-      "y" : 775,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1360,
-      "y" : 775,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
-      "x" : 1361,
-      "y" : 775,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
       "x" : 169,
       "y" : 776,
       "r" : 255,
@@ -16372,12 +16216,6 @@
       "r" : 255,
       "g" : 255,
       "b" : 255
-    }, {
-      "x" : 157,
-      "y" : 781,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
     }, {
       "x" : 158,
       "y" : 781,
@@ -16421,12 +16259,6 @@
       "g" : 36,
       "b" : 104
     }, {
-      "x" : 157,
-      "y" : 786,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
       "x" : 158,
       "y" : 786,
       "r" : 2,
@@ -16444,36 +16276,6 @@
       "r" : 255,
       "g" : 255,
       "b" : 255
-    }, {
-      "x" : 1350,
-      "y" : 788,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1351,
-      "y" : 788,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1360,
-      "y" : 788,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
-      "x" : 1361,
-      "y" : 788,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
-      "x" : 157,
-      "y" : 791,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
     }, {
       "x" : 158,
       "y" : 791,
@@ -16493,30 +16295,6 @@
       "g" : 36,
       "b" : 104
     }, {
-      "x" : 1350,
-      "y" : 794,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1351,
-      "y" : 794,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
-    }, {
-      "x" : 1360,
-      "y" : 794,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
-      "x" : 1361,
-      "y" : 794,
-      "r" : 255,
-      "g" : 255,
-      "b" : 255
-    }, {
       "x" : 169,
       "y" : 796,
       "r" : 255,
@@ -16529,77 +16307,77 @@
       "g" : 255,
       "b" : 255
     }, {
-      "x" : 1350,
-      "y" : 799,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 146,
+      "y" : 758,
+      "r" : 0,
+      "g" : 193,
+      "b" : 236
     }, {
-      "x" : 1351,
-      "y" : 799,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 147,
+      "y" : 758,
+      "r" : 0,
+      "g" : 193,
+      "b" : 236
     }, {
-      "x" : 1360,
-      "y" : 799,
+      "x" : 202,
+      "y" : 786,
       "r" : 255,
       "g" : 255,
       "b" : 255
     }, {
-      "x" : 1361,
-      "y" : 799,
+      "x" : 203,
+      "y" : 786,
       "r" : 255,
       "g" : 255,
       "b" : 255
     }, {
-      "x" : 169,
-      "y" : 800,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 220,
+      "y" : 787,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 170,
-      "y" : 800,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 220,
+      "y" : 791,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 180,
-      "y" : 800,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 254,
+      "y" : 788,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 181,
-      "y" : 800,
-      "r" : 2,
-      "g" : 36,
-      "b" : 104
+      "x" : 254,
+      "y" : 791,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 1275,
-      "y" : 818,
-      "r" : 0,
-      "g" : 134,
-      "b" : 199
+      "x" : 276,
+      "y" : 795,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 1276,
-      "y" : 818,
-      "r" : 0,
-      "g" : 134,
-      "b" : 199
+      "x" : 276,
+      "y" : 792,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 1275,
-      "y" : 827,
-      "r" : 0,
-      "g" : 55,
-      "b" : 131
+      "x" : 276,
+      "y" : 789,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     }, {
-      "x" : 1276,
-      "y" : 827,
-      "r" : 0,
-      "g" : 55,
-      "b" : 131
+      "x" : 276,
+      "y" : 786,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
     } ],
     "enabled" : true
   }, {
@@ -19205,7 +18983,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-home-daily",
+    "name" : "Menu - Home - Daily",
     "screenId" : "menu-home-daily",
     "points" : [ {
       "x" : 1762,
@@ -19587,7 +19365,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-home-login_bonus",
+    "name" : "Menu - Home - Login Bonus",
     "screenId" : "menu-home-login_bonus",
     "points" : [ {
       "x" : 726,
@@ -19717,7 +19495,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-log_in_again",
+    "name" : "Menu - Log in again",
     "screenId" : "menu-log_in_again",
     "points" : [ {
       "x" : 347,
@@ -20130,7 +19908,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - logo",
+    "name" : "Menu - Logo",
     "screenId" : "menu-logo",
     "points" : [ {
       "x" : 1720,
@@ -21093,7 +20871,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-messages",
+    "name" : "Menu - Messages",
     "screenId" : "menu-messages",
     "points" : [ {
       "x" : 84,
@@ -23578,7 +23356,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - raid_orbs",
+    "name" : "Menu - Raid Orbs",
     "screenId" : "menu-raid_orbs",
     "points" : [ {
       "x" : 1523,
@@ -23876,7 +23654,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - raid_screen",
+    "name" : "Menu - Raid Screen",
     "screenId" : "menu-raid_screen",
     "points" : [ {
       "x" : 80,
@@ -24030,7 +23808,7 @@
     "points" : [ ],
     "enabled" : false
   }, {
-    "name" : "Menu - results-damage",
+    "name" : "Menu - Results - Damage",
     "screenId" : "menu-results-damage",
     "points" : [ {
       "x" : 367,
@@ -24442,7 +24220,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - results-missions",
+    "name" : "Menu - Results - Missions",
     "screenId" : "menu-results-missions",
     "points" : [ {
       "x" : 701,
@@ -25135,7 +24913,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - results-points_raid",
+    "name" : "Menu - Results - Points raid",
     "screenId" : "menu-results-points_raid",
     "points" : [ {
       "x" : 7,
@@ -25272,7 +25050,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-results-steal",
+    "name" : "Menu - Results - Steal",
     "screenId" : "menu-results-steal",
     "points" : [ {
       "x" : 375,
@@ -27336,7 +27114,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-title",
+    "name" : "Menu - Title",
     "screenId" : "menu-title",
     "points" : [ {
       "x" : 291,
@@ -28167,7 +27945,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-vortex-enhance",
+    "name" : "Menu - Vortex - Enhance",
     "screenId" : "menu-vortex-enhance",
     "points" : [ {
       "x" : 132,
@@ -28424,7 +28202,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-vortex-nemeses",
+    "name" : "Menu - Vortex - Nemeses",
     "screenId" : "menu-vortex-nemeses",
     "points" : [ {
       "x" : 80,
@@ -28537,7 +28315,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - white",
+    "name" : "Menu - White",
     "screenId" : "menu-white",
     "points" : [ {
       "x" : 1616,
@@ -28674,7 +28452,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-world-common",
+    "name" : "Menu - World - Common",
     "screenId" : "menu-world-common",
     "points" : [ {
       "x" : 79,
@@ -28811,7 +28589,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-world-grandshelt",
+    "name" : "Menu - World - Grandshelt",
     "screenId" : "menu-world-grandshelt",
     "points" : [ {
       "x" : 78,
@@ -29140,7 +28918,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-world-grandshelt_isles",
+    "name" : "Menu - World - Grandshelt Isles",
     "screenId" : "menu-world-grandshelt_isles",
     "points" : [ {
       "x" : 77,
@@ -29499,7 +29277,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-world-grandshelt_isles-earthshrine",
+    "name" : "Menu - World - Grandshelt Isles - Earthshrine",
     "screenId" : "menu-world-grandshelt_isles-earthshrine",
     "points" : [ {
       "x" : 608,
@@ -30288,7 +30066,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - worlds",
+    "name" : "Menu - Worlds",
     "screenId" : "menu-worlds",
     "points" : [ {
       "x" : 441,
@@ -30425,7 +30203,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - worlds-sub",
+    "name" : "Menu - Worlds - Sub",
     "screenId" : "menu-worlds-sub",
     "points" : [ ],
     "enabled" : false
@@ -31293,7 +31071,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "raid-summon_menu",
+    "name" : "Raid - Summon menu",
     "screenId" : "raid-summon_menu",
     "points" : [ {
       "x" : 1289,
@@ -31382,7 +31160,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-enhance_units",
+    "name" : "Units - Enhance units",
     "screenId" : "units-enhance_units",
     "points" : [ {
       "x" : 77,
@@ -31519,7 +31297,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-filtered",
+    "name" : "Units - Filtered",
     "screenId" : "units-filtered",
     "points" : [ {
       "x" : 1244,
@@ -31554,7 +31332,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-fuse",
+    "name" : "Units - Fuse",
     "screenId" : "units-fuse",
     "points" : [ {
       "x" : 1575,
@@ -31727,7 +31505,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-material_units",
+    "name" : "Units - Material units",
     "screenId" : "units-material_units",
     "points" : [ {
       "x" : 79,
@@ -32079,7 +31857,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-select_base-one_unit",
+    "name" : "Units - Select base - One unit",
     "screenId" : "units-select_base-one_unit",
     "points" : [ {
       "x" : 624,
@@ -32162,7 +31940,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-select_base-two_unit",
+    "name" : "Units - Select base - Two unit",
     "screenId" : "units-select_base-two_unit",
     "points" : [ {
       "x" : 1003,
@@ -32275,7 +32053,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-sell",
+    "name" : "Units - Sell",
     "screenId" : "units-sell",
     "points" : [ {
       "x" : 63,
@@ -32388,7 +32166,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-sell-confirm-popup",
+    "name" : "Units - Sell - Confirm - Popup",
     "screenId" : "units-sell-confirm-popup",
     "points" : [ {
       "x" : 247,
@@ -32441,7 +32219,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "units-sell-popup_ok",
+    "name" : "Units - Sell - Popup OK",
     "screenId" : "units-sell-popup_ok",
     "points" : [ {
       "x" : 925,
@@ -32530,7 +32308,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "vortex-unlock-free",
+    "name" : "Vortex - Unlock - Free",
     "screenId" : "vortex-unlock-free",
     "points" : [ {
       "x" : 297,
@@ -32619,7 +32397,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "vortex-unlock-paid",
+    "name" : "Vortex - Unlock - Paid",
     "screenId" : "vortex-unlock-paid",
     "points" : [ {
       "x" : 297,
