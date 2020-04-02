@@ -2,6 +2,13 @@
 {
   "vars": [
     {
+      "name": "arena-lilith-position",
+      "display": "Unit Position",
+      "description": "The position of the unit",
+      "value": "1",
+      "type": "INT", "modify": "EDITABLE", "order": 10, "tierId": "arena-lilith_5", "values": [ {"name": "1", "value": "0"}, {"name": "2", "value": "1"}, {"name": "3", "value": "2"}, {"name": "4", "value": "3"}, {"name": "5", "value": "4"}]
+    },
+    {
       "name": "arena-lilith_5-twice_col",
       "display": "Serpentine Tail - Column",
       "value": "0",
@@ -123,7 +130,7 @@
     }
   ],
   "varTiers": [
-    {"title":"Lilith - Position 5", "id":"arena-lilith_5", "tabId":"arena"}
+    {"title":"Lilith", "id":"arena-lilith_5", "tabId":"arena"}
   ],
   "imports": [
 
@@ -132,8 +139,8 @@
 
     // Lillity - Position 5, Index 4
     "_arena-battle-fight-abilities-include_4": {
-      "name": "Arena - Battle - Abilities - For Slot 5",
-      "description": "Setup your units to attack - For Slot 5",
+      "name": "Arena - Battle - Abilities",
+      "description": "Setup your units to attack",
       "variables": {
       },
       "statements": [
@@ -150,29 +157,31 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "2",
-                "var": "lbAttempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbSelected",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -180,7 +189,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - LB"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - LB"
             },
             {
               "type": "ADD",
@@ -192,7 +201,7 @@
                 "not": "CALL",
                 "value": "@readyUnitLbSafely",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               "type": "REPEAT"
@@ -216,15 +225,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -251,21 +262,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -273,7 +284,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Kiss of Midnight X 2"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Kiss of Midnight X 2"
             },
             {
               "type": "SET",
@@ -281,15 +292,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -297,7 +310,7 @@
                 "is": "CALL",
                 "value": "@readyDualCastSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-twice_row}",
                   "column0": "${arena-lilith_5-twice_col}",
                   "row1": "${arena-lilith_5-kom_row}",
@@ -327,15 +340,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -357,21 +372,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -379,7 +394,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Dawn Lash X 2"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Dawn Lash X 2"
             },
             {
               "type": "SET",
@@ -387,15 +402,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -403,7 +420,7 @@
                 "is": "CALL",
                 "value": "@readyDualCastSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-twice_row}",
                   "column0": "${arena-lilith_5-twice_col}",
                   "row1": "${arena-lilith_5-dlash_row}",
@@ -433,15 +450,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -463,21 +482,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -485,7 +504,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Dawn Lash X 2"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Dawn Lash X 2"
             },
             {
               "type": "SET",
@@ -493,15 +512,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -509,7 +530,7 @@
                 "is": "CALL",
                 "value": "@readyDualCastSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-twice_row}",
                   "column0": "${arena-lilith_5-twice_col}",
                   "row1": "${arena-lilith_5-dlush_row}",
@@ -540,15 +561,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -570,21 +593,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -592,7 +615,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Kiss of Midnight"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Kiss of Midnight"
             },
             {
               "type": "SET",
@@ -600,15 +623,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -616,7 +641,7 @@
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-kom_row}",
                   "column0": "${arena-lilith_5-kom_col}"
                 }
@@ -639,15 +664,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -664,21 +691,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -686,7 +713,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Dawn Lash"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Dawn Lash"
             },
             {
               "type": "SET",
@@ -694,15 +721,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -710,7 +739,7 @@
                 "is": "CALL",
                 "value": "@readyActionSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-dlash_row}",
                   "column0": "${arena-lilith_5-dlash_col}"
                 }
@@ -738,15 +767,17 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
@@ -763,21 +794,21 @@
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -785,7 +816,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Dawn Lash X 2"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Dawn Lash X 2"
             },
             {
               "type": "SET",
@@ -793,15 +824,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -809,7 +842,7 @@
                 "is": "CALL",
                 "value": "@readyDualCastSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-dlush_row}",
                   "column0": "${arena-lilith_5-dlush_col}"
                 }
@@ -836,36 +869,38 @@
                 "var": "segment"
               },
               {
-                "is": "LESS",
-                "value": "3",
-                "var": "unit4Attempts"
+                "is": "CALL",
+                "value": "@isUnitNotAttempted",
+                "args": {
+                  "index": "${arena-lilith-position}"
+                }
               },
               {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitActionReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               },
               {
                 "not": "CALL",
                 "value": "@isUnitLbReady",
                 "args": {
-                  "index": "4"
+                  "index": "${arena-lilith-position}"
                 }
               }
             ]
@@ -873,7 +908,7 @@
           "actions": [
             {
               "type": "INFO",
-              "value": "Setting Up Lilith - Position 5 - Love Hungry"
+              "value": "Setting Up Lilith - Index ${arena-lilith-position} - Love Hungry"
             },
             {
               "type": "SET",
@@ -881,15 +916,17 @@
               "value": "1"
             },
             {
-              "type": "ADD",
-              "var": "unit4Attempts",
-              "value": "1"
+              "type": "CALL",
+              "value": "@setUnitAttempted",
+              "args": {
+                "index": "${arena-lilith-position}"
+              }
             },
             {
               "type": "CALL",
               "value": "@showUnitActions",
               "args": {
-                "index": "4"
+                "index": "${arena-lilith-position}"
               }
             },
             {
@@ -897,7 +934,7 @@
                 "is": "CALL",
                 "value": "@readyDualCastSafely",
                 "args": {
-                  "index": "4",
+                  "index": "${arena-lilith-position}",
                   "row0": "${arena-lilith_5-lh_row}",
                   "column0": "${arena-lilith_5-lh_col}"
                 }
