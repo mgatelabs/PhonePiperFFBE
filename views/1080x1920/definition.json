@@ -18485,6 +18485,11 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "OS - Low storage - Blank",
+    "screenId" : "os-low_storage-blank",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "OS - Unable to access data",
     "screenId" : "os-unable_to_access_data",
     "points" : [ {
@@ -21121,6 +21126,14 @@
     "y" : 1410,
     "w" : 70,
     "h" : 80,
+    "enabled" : true
+  }, {
+    "name" : "OS - Low storage - Not now",
+    "componentId" : "os-low_storage-not_now",
+    "x" : 687,
+    "y" : 1213,
+    "w" : 139,
+    "h" : 42,
     "enabled" : true
   }, {
     "name" : "OS - Unable to access data - OK",

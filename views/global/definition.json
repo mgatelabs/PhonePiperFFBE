@@ -1086,6 +1086,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "OS - Low storage - Blank",
+    "screenId" : "os-low_storage-blank",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "OS - Unable to access data",
     "screenId" : "os-unable_to_access_data",
     "points" : [ ],
@@ -2683,6 +2688,14 @@
   }, {
     "name" : "OS - App - Icon D",
     "componentId" : "os-app-icon_d",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "OS - Low storage - Not now",
+    "componentId" : "os-low_storage-not_now",
     "x" : 0,
     "y" : 0,
     "w" : 1,

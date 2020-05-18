@@ -653,6 +653,26 @@
               "value": ""
             }
           ]
+        },      
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "os-low_storage-blank"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Low storage has been detected, ignoring"
+            },
+            {
+              "type": "TAP",
+              "value": "os-low_storage-not_now"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
         },
         {
           "condition": {
