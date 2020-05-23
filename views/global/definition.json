@@ -1091,6 +1091,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "OS - Low storage - Home",
+    "screenId" : "os-low_storage-home",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "OS - Unable to access data",
     "screenId" : "os-unable_to_access_data",
     "points" : [ ],

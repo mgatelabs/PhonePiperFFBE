@@ -657,7 +657,7 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "os-low_storage-blank"
+            "value": "os-low_storage-blank,os-low_storage-home"
           },
           "actions": [
             {
