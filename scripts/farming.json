@@ -338,6 +338,7 @@
         "_any_router_to_*",
         "_any_can_extra",
         "_home_daily_fixes",
+        "_common-skip-button",
         "_common-no_op",
         "_backup_to_home"
       ],
@@ -747,6 +748,7 @@
     "_log-in-common":{
       "name": "Common - Recovery Log In (Override)",
       "includes": [
+        "_common-skip-button",
         "_arena-menu-begin"
       ],
       "statements": [

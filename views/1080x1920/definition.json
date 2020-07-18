@@ -6818,130 +6818,10 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - Download Data",
-    "screenId" : "menu-download_data",
-    "points" : [ {
-      "x" : 944,
-      "y" : 725,
-      "r" : 0,
-      "g" : 10,
-      "b" : 34
-    }, {
-      "x" : 950,
-      "y" : 731,
-      "r" : 0,
-      "g" : 10,
-      "b" : 33
-    }, {
-      "x" : 137,
-      "y" : 1253,
-      "r" : 0,
-      "g" : 10,
-      "b" : 35
-    }, {
-      "x" : 130,
-      "y" : 1246,
-      "r" : 0,
-      "g" : 10,
-      "b" : 35
-    }, {
-      "x" : 171,
-      "y" : 1210,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 185,
-      "y" : 1210,
-      "r" : 0,
-      "g" : 46,
-      "b" : 136
-    }, {
-      "x" : 194,
-      "y" : 1220,
-      "r" : 0,
-      "g" : 47,
-      "b" : 140
-    }, {
-      "x" : 194,
-      "y" : 1232,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 457,
-      "y" : 1232,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 457,
-      "y" : 1218,
-      "r" : 0,
-      "g" : 30,
-      "b" : 122
-    }, {
-      "x" : 467,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 33,
-      "b" : 126
-    }, {
-      "x" : 479,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 601,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 613,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 47,
-      "b" : 138
-    }, {
-      "x" : 624,
-      "y" : 1219,
-      "r" : 0,
-      "g" : 48,
-      "b" : 142
-    }, {
-      "x" : 624,
-      "y" : 1232,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 884,
-      "y" : 1232,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    }, {
-      "x" : 884,
-      "y" : 1219,
-      "r" : 0,
-      "g" : 31,
-      "b" : 123
-    }, {
-      "x" : 895,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 32,
-      "b" : 124
-    }, {
-      "x" : 908,
-      "y" : 1208,
-      "r" : 0,
-      "g" : 0,
-      "b" : 0
-    } ],
-    "enabled" : true
+    "name" : "Menu - Download - Choice",
+    "screenId" : "menu-download-choice",
+    "points" : [ ],
+    "enabled" : false
   }, {
     "name" : "Menu - Download Notice",
     "screenId" : "menu-download_notice",
@@ -10505,7 +10385,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "Menu - friend_select-bottom",
+    "name" : "Menu - friend select - Bottom",
     "screenId" : "menu-friend_select-bottom",
     "points" : [ {
       "x" : 35,
@@ -11711,7 +11591,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-home-daily",
+    "name" : "Menu - Home - Daily",
     "screenId" : "menu-home-daily",
     "points" : [ {
       "x" : 979,
@@ -11907,7 +11787,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-home-login_bonus",
+    "name" : "Menu - Home - Login bonus",
     "screenId" : "menu-home-login_bonus",
     "points" : [ {
       "x" : 408,
@@ -12025,7 +11905,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-log_in_again",
+    "name" : "Menu - Log in again",
     "screenId" : "menu-log_in_again",
     "points" : [ {
       "x" : 407,
@@ -12573,7 +12453,7 @@
     "points" : [ ],
     "enabled" : false
   }, {
-    "name" : "menu-messages",
+    "name" : "Menu - Messages",
     "screenId" : "menu-messages",
     "points" : [ {
       "x" : 47,
@@ -15108,7 +14988,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-results-steal",
+    "name" : "Menu - Results - Steal",
     "screenId" : "menu-results-steal",
     "points" : [ {
       "x" : 439,
@@ -15970,6 +15850,179 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Menu - Skip - Button",
+    "screenId" : "menu-skip-button",
+    "points" : [ {
+      "x" : 54,
+      "y" : 114,
+      "r" : 1,
+      "g" : 48,
+      "b" : 141
+    }, {
+      "x" : 56,
+      "y" : 116,
+      "r" : 1,
+      "g" : 48,
+      "b" : 141
+    }, {
+      "x" : 58,
+      "y" : 118,
+      "r" : 2,
+      "g" : 46,
+      "b" : 135
+    }, {
+      "x" : 54,
+      "y" : 118,
+      "r" : 3,
+      "g" : 46,
+      "b" : 136
+    }, {
+      "x" : 58,
+      "y" : 114,
+      "r" : 3,
+      "g" : 46,
+      "b" : 136
+    }, {
+      "x" : 214,
+      "y" : 178,
+      "r" : 0,
+      "g" : 23,
+      "b" : 114
+    }, {
+      "x" : 212,
+      "y" : 176,
+      "r" : 0,
+      "g" : 25,
+      "b" : 116
+    }, {
+      "x" : 210,
+      "y" : 174,
+      "r" : 0,
+      "g" : 21,
+      "b" : 110
+    }, {
+      "x" : 210,
+      "y" : 178,
+      "r" : 0,
+      "g" : 22,
+      "b" : 111
+    }, {
+      "x" : 214,
+      "y" : 174,
+      "r" : 0,
+      "g" : 21,
+      "b" : 109
+    }, {
+      "x" : 963,
+      "y" : 179,
+      "r" : 0,
+      "g" : 12,
+      "b" : 95
+    }, {
+      "x" : 970,
+      "y" : 179,
+      "r" : 0,
+      "g" : 21,
+      "b" : 110
+    }, {
+      "x" : 963,
+      "y" : 173,
+      "r" : 0,
+      "g" : 9,
+      "b" : 90
+    }, {
+      "x" : 1025,
+      "y" : 116,
+      "r" : 1,
+      "g" : 31,
+      "b" : 111
+    }, {
+      "x" : 1023,
+      "y" : 120,
+      "r" : 1,
+      "g" : 27,
+      "b" : 104
+    }, {
+      "x" : 1021,
+      "y" : 125,
+      "r" : 0,
+      "g" : 23,
+      "b" : 92
+    }, {
+      "x" : 1008,
+      "y" : 132,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 1008,
+      "y" : 135,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 1008,
+      "y" : 138,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 1008,
+      "y" : 142,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 982,
+      "y" : 142,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 982,
+      "y" : 138,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 982,
+      "y" : 135,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 982,
+      "y" : 132,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 979,
+      "y" : 163,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 986,
+      "y" : 163,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 1005,
+      "y" : 163,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    }, {
+      "x" : 1012,
+      "y" : 163,
+      "r" : 255,
+      "g" : 255,
+      "b" : 255
+    } ],
+    "enabled" : true
+  }, {
     "name" : "Menu - Special Reward - 0",
     "screenId" : "menu-special_reward-0",
     "points" : [ ],
@@ -16110,7 +16163,7 @@
     } ],
     "enabled" : true
   }, {
-    "name" : "menu-title",
+    "name" : "Menu - Title",
     "screenId" : "menu-title",
     "points" : [ {
       "x" : 605,
@@ -18490,6 +18543,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "OS - Low storage - Home",
+    "screenId" : "os-low_storage-home",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "OS - Unable to access data",
     "screenId" : "os-unable_to_access_data",
     "points" : [ {
@@ -20248,12 +20306,12 @@
     "h" : 154,
     "enabled" : true
   }, {
-    "name" : "Menu - Download Data - Yes",
-    "componentId" : "menu-download_data-yes",
-    "x" : 640,
-    "y" : 1160,
-    "w" : 210,
-    "h" : 40,
+    "name" : "Menu - Download - Choice - Yes",
+    "componentId" : "menu-download-choice-yes",
+    "x" : 648,
+    "y" : 1162,
+    "w" : 192,
+    "h" : 58,
     "enabled" : true
   }, {
     "name" : "Menu - Download Notice - OK",
@@ -20934,6 +20992,14 @@
     "y" : 832,
     "w" : 40,
     "h" : 40,
+    "enabled" : true
+  }, {
+    "name" : "Menu - Skip - Button",
+    "componentId" : "menu-skip-button",
+    "x" : 56,
+    "y" : 115,
+    "w" : 154,
+    "h" : 64,
     "enabled" : true
   }, {
     "name" : "Menu - Special Reward - OK",

@@ -460,11 +460,6 @@
     "points" : [ ],
     "enabled" : false
   }, {
-    "name" : "Menu - Download Data",
-    "screenId" : "menu-download_data",
-    "points" : [ ],
-    "enabled" : false
-  }, {
     "name" : "Menu - Energy Recovery",
     "screenId" : "menu-energy_recovery",
     "points" : [ ],
@@ -1815,14 +1810,6 @@
   }, {
     "name" : "Menu - Depart - Units",
     "componentId" : "menu-depart-units",
-    "x" : 0,
-    "y" : 0,
-    "w" : 1,
-    "h" : 1,
-    "enabled" : false
-  }, {
-    "name" : "Menu - Download Data - Yes",
-    "componentId" : "menu-download_data-yes",
     "x" : 0,
     "y" : 0,
     "w" : 1,

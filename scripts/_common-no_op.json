@@ -464,6 +464,31 @@
         }
       ]
     },
+    "_common-skip-button": {
+      "name": "Common - Skip Button",
+      "statements": [
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "menu-skip-button"
+          },
+          "actions": [
+            {
+              "type": "TAP",
+              "value": "menu-skip-button"
+            },
+            {
+              "type": "WAIT",
+              "value": "5000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
     "_common-connection_fix": {
       "name": "Common - No-Op",
       "variables": {
@@ -556,12 +581,12 @@
         {
           "condition": {
             "is": "SCREEN",
-            "value": "menu-download_data"
+            "value": "menu-download-choice"
           },
           "actions": [
             {
               "type": "TAP",
-              "value": "menu-download_data-yes"
+              "value": "menu-download-choice-yes"
             },
             {
               "type": "WAIT",

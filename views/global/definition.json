@@ -345,7 +345,7 @@
     "points" : [ ],
     "enabled" : false
   }, {
-    "name" : "menu-arena-rewards",
+    "name" : "Menu - Arena - Rewards",
     "screenId" : "menu-arena-rewards",
     "points" : [ ],
     "enabled" : false
@@ -470,8 +470,8 @@
     "points" : [ ],
     "enabled" : false
   }, {
-    "name" : "Menu - Download Data",
-    "screenId" : "menu-download_data",
+    "name" : "Menu - Download - Choice",
+    "screenId" : "menu-download-choice",
     "points" : [ ],
     "enabled" : false
   }, {
@@ -943,6 +943,11 @@
   }, {
     "name" : "Menu - Reward Wheel - Treasure",
     "screenId" : "menu-rw-treasure",
+    "points" : [ ],
+    "enabled" : false
+  }, {
+    "name" : "Menu - Skip - Button",
+    "screenId" : "menu-skip-button",
     "points" : [ ],
     "enabled" : false
   }, {
@@ -1819,8 +1824,8 @@
     "h" : 1,
     "enabled" : false
   }, {
-    "name" : "Menu - Download Data - Yes",
-    "componentId" : "menu-download_data-yes",
+    "name" : "Menu - Download - Choice - Yes",
+    "componentId" : "menu-download-choice-yes",
     "x" : 0,
     "y" : 0,
     "w" : 1,
@@ -2501,6 +2506,14 @@
   }, {
     "name" : "Menu - Reward Wheel - Treasure - X",
     "componentId" : "menu-rw-treasure-x",
+    "x" : 0,
+    "y" : 0,
+    "w" : 1,
+    "h" : 1,
+    "enabled" : false
+  }, {
+    "name" : "Menu - Skip - Button",
+    "componentId" : "menu-skip-button",
     "x" : 0,
     "y" : 0,
     "w" : 1,
