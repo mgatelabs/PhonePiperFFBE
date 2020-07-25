@@ -520,7 +520,7 @@
             }
           ]
         },
-		{
+		    {
           "condition": {
             "is": "SCREEN",
             "value": "battle-actions"
@@ -533,6 +533,30 @@
             {
               "type": "TAP",
               "value": "battle-actions-back"
+            },
+            {
+              "type": "WAIT",
+              "value": "1000"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+		    {
+          "condition": {
+            "is": "SCREEN",
+            "value": "battle-menu"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Battle Menu Left Open, Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "battle-menu-back"
             },
             {
               "type": "WAIT",
