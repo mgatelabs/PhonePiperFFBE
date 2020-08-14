@@ -20884,26 +20884,26 @@
   }, {
     "name" : "Menu - Raid Level 0 (Top)",
     "componentId" : "menu-raid_0",
-    "x" : 190,
-    "y" : 1050,
-    "w" : 570,
-    "h" : 80,
+    "x" : 220,
+    "y" : 1290,
+    "w" : 550,
+    "h" : 90,
     "enabled" : true
   }, {
     "name" : "Menu - Raid Level 1",
     "componentId" : "menu-raid_1",
-    "x" : 160,
-    "y" : 1320,
-    "w" : 670,
-    "h" : 110,
+    "x" : 220,
+    "y" : 1540,
+    "w" : 570,
+    "h" : 170,
     "enabled" : true
   }, {
     "name" : "Menu - Raid Level 2",
     "componentId" : "menu-raid_2",
-    "x" : 130,
-    "y" : 1620,
-    "w" : 630,
-    "h" : 100,
+    "x" : 280,
+    "y" : 1820,
+    "w" : 91,
+    "h" : 28,
     "enabled" : true
   }, {
     "name" : "Menu - Raid Recovery - Yes",
