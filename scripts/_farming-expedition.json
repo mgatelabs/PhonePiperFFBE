@@ -312,8 +312,17 @@
           },
           "actions": [
             {
+              "type": "INFO",
+              "value": "Found Max Slots Notice - Trying to leave"
+            },
+            {
               "type": "TAP",
               "value": "menu-expedition-max_slot_reached-yes"
+            },
+            {
+              "type": "ADD",
+              "var": "safety",
+              "value": "500"
             },
             {
               "type": "WAIT",
