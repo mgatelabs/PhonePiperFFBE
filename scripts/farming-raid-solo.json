@@ -12,7 +12,8 @@
       "values": [
         {"name": "Attack", "value": "0"},
         {"name": "Ability", "value": "1"},
-        {"name": "Custom", "value": "-1"}
+        {"name": "Custom", "value": "-1"},
+        {"name": "LB", "value": "2"}
       ],
       "description": "The job for unit 1"
     },
@@ -52,7 +53,8 @@
       "values": [
         {"name": "Attack", "value": "0"},
         {"name": "Ability", "value": "1"},
-        {"name": "Custom", "value": "-1"}
+        {"name": "Custom", "value": "-1"},
+        {"name": "LB", "value": "2"}
       ],
       "description": "The job for unit 2"
     },
@@ -93,7 +95,8 @@
       "values": [
         {"name": "Attack", "value": "0"},
         {"name": "Ability", "value": "1"},
-        {"name": "Custom", "value": "-1"}
+        {"name": "Custom", "value": "-1"},
+        {"name": "LB", "value": "2"}
       ],
       "description": "The job for unit 3"
     },
@@ -134,7 +137,8 @@
       "values": [
         {"name": "Attack", "value": "0"},
         {"name": "Ability", "value": "1"},
-        {"name": "Custom", "value": "-1"}
+        {"name": "Custom", "value": "-1"},
+        {"name": "LB", "value": "2"}
       ],
       "description": "The job for unit 4"
     },
@@ -175,7 +179,8 @@
       "values": [
         {"name": "Attack", "value": "0"},
         {"name": "Ability", "value": "1"},
-        {"name": "Custom", "value": "-1"}
+        {"name": "Custom", "value": "-1"},
+        {"name": "LB", "value": "2"}
       ],
       "description": "The job for unit 5"
     },
@@ -393,6 +398,15 @@
               "value": "JOB_1_LOGIC"
             },
             {
+              "condition": {
+                "is": "EQUAL",
+                "var": "job",
+                "value": "2"
+              },
+              "type": "GOTO",
+              "value": "JOB_2_LOGIC"
+            },
+            {
               "type": "GOTO",
               "value": "NOTHING"
             },
@@ -440,11 +454,45 @@
             },
             {
               "type": "LABEL",
+              "value": "JOB_2_LOGIC"
+            },
+            {
+              "condition":
+                    {
+                      "is": "CALL",
+                      "value": "@isBattleReady",
+                      "and": [
+                        {
+                          "is": "CALL",
+                          "value": "@isUnitReady",
+                          "args": {
+                            "index": "${index}"
+                          }
+                        },
+                        {
+                          "not": "CALL",
+                          "value": "@isUnitLbSelected",
+                          "args": {
+                            "index": "${index}"
+                          }
+                        }
+                    ]
+                  }
+                ,
+              "type": "GOTO",
+              "value": "JOB_2_WORK"
+            },
+            {
+              "type": "GOTO",
+              "value": "NOTHING"
+            },
+            {
+              "type": "LABEL",
               "value": "JOB_1_WORK"
             },
             {
               "type": "INFO",
-              "value": "Unit ${index} Setup"
+              "value": "Unit ${index} Ability Setup"
             },
             {
               "type": "CALL",
@@ -466,7 +514,34 @@
               "type": "RETURN",
               "value": "1"
             },
-
+            {
+              "type": "LABEL",
+              "value": "JOB_2_WORK"
+            },
+            {
+              "type": "INFO",
+              "value": "Unit ${index} LB Setup"
+            },
+            {
+              "type": "CALL",
+              "value": "@showUnitActions",
+              "args": {
+                "index": "${index}"
+              }
+            },
+            {
+              "type": "CALL",
+              "value": "@selectUnitAction",
+              "args": {
+                "row": "0",
+                "column": "0"
+              }
+            },
+            { "type": "CALL", "value": "@keepAlive" },
+            {
+              "type": "RETURN",
+              "value": "1"
+            },
             {
               "type": "LABEL",
               "value": "NOTHING"
