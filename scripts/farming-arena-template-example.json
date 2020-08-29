@@ -602,6 +602,11 @@
               "var": "unit4Attempts",
               "value": "0"
             },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "0"
+            },
             // UPDATE COOLDOWN COUNTS
             {
               "type": "ADD",

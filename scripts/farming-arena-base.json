@@ -45,6 +45,15 @@
       "modify" : "HIDDEN",
       "displayType" : "STANDARD",
       "order" : 0
+    },
+    {
+      "name" : "healingLevel",
+      "display" : "Used to stop action from being tried back to back",
+      "value" : "0",
+      "type" : "INT",
+      "modify" : "HIDDEN",
+      "displayType" : "STANDARD",
+      "order" : 0
     }
   ],
   "imports": [

@@ -1094,6 +1094,10 @@
           "value": "0",
           "type": "INT"
         },
+        "index2": {
+          "value": "-1",
+          "type": "INT"
+        },
         "row0": {
           "value": "0",
           "type": "INT"
