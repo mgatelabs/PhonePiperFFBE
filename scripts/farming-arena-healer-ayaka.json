@@ -380,6 +380,19 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Elysium (Heal + Barrier with 6 Turn Cool down)"
+            },          
+            {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-elys-row}",
+                "column0": "${arena-healer_4-elys-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
             },
             {
               "type": "SET",
@@ -390,21 +403,6 @@
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-elys-row}",
-                "column": "${arena-healer_4-elys-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -492,6 +490,19 @@
               "value": "Ayaka Used Purify+ (Cure Status + Barrier with 4 Turn Cool down)"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-purp-row}",
+                "column0": "${arena-healer_4-purp-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "purify",
               "value": "4"
@@ -500,21 +511,6 @@
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-purp-row}",
-                "column": "${arena-healer_4-purp-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -592,24 +588,22 @@
               "value": "Ayaka Used Stop Detach (Cure Stop)"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-stod-row}",
+                "column0": "${arena-healer_4-stod-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-stod-row}",
-                "column": "${arena-healer_4-stod-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -692,6 +686,19 @@
               "value": "Ayaka Used Resurgence+"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-resp-row}",
+                "column0": "${arena-healer_4-resp-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
@@ -700,21 +707,6 @@
               "type": "SET",
               "var": "resurgence",
               "value": "5"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-resp-row}",
-                "column": "${arena-healer_4-resp-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -792,24 +784,22 @@
               "value": "Ayaka Used Curaja (Big Heal) Needed"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-curj-row}",
+                "column0": "${arena-healer_4-curj-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-curj-row}",
-                "column": "${arena-healer_4-curj-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -887,24 +877,22 @@
               "value": "Ayaka Used Purify (Small Heal + Ailments)"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-puri-row}",
+                "column0": "${arena-healer_4-puri-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-puri-row}",
-                "column": "${arena-healer_4-puri-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -967,11 +955,17 @@
               "value": "Ayaka is using ESPER"
             },
             {
-              "type": "CALL",
-              "value": "@readyUnitEsper",
-              "args": {
-                "index": "3"
-              }
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "0",
+                "column0": "1"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
             },
             {
               "type": "CALL",
@@ -1033,24 +1027,22 @@
               "value": "Ayaka Used Curaja (Big Heal) Default"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-curj-row}",
+                "column0": "${arena-healer_4-curj-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-curj-row}",
-                "column": "${arena-healer_4-curj-col}"
-              }
             },
             {
               "type": "WAIT",
@@ -1122,24 +1114,22 @@
               "value": "Ayaka Used Purify (Minor Heal) Default"
             },
             {
+              "condition": {
+                "is": "CALL",
+                "value": "@readyActionSafely",
+                "args": {
+                  "index": "3",
+                "row0": "${arena-healer_4-puri-row}",
+                "column0": "${arena-healer_4-puri-col}"
+                }
+              },
+              "type": "REPEAT",
+              "value": ""
+            },
+            {
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "CALL",
-              "value": "@showUnitActions",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "CALL",
-              "value": "@selectUnitAction",
-              "args": {
-                "row": "${arena-healer_4-puri-row}",
-                "column": "${arena-healer_4-puri-col}"
-              }
             },
             {
               "type": "WAIT",
