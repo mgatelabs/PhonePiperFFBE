@@ -384,7 +384,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-elys-row}",
@@ -492,7 +492,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-purp-row}",
@@ -590,7 +590,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-stod-row}",
@@ -688,7 +688,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-resp-row}",
@@ -786,7 +786,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-curj-row}",
@@ -879,7 +879,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-puri-row}",
@@ -957,7 +957,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "0",
@@ -1029,7 +1029,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-curj-row}",
@@ -1116,7 +1116,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyActionSafely",
+                "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
                 "row0": "${arena-healer_4-puri-row}",

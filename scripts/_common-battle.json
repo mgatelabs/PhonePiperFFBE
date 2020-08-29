@@ -1087,6 +1087,97 @@
       ]
     },
 
+    "@readyHealingSafely": {
+      "name": "Function - Ready Healing Safely",
+      "variables": {
+        "index": {
+          "value": "0",
+          "type": "INT"
+        },
+        "row0": {
+          "value": "0",
+          "type": "INT"
+        },
+        "column0": {
+          "value": "0",
+          "type": "INT"
+        }
+      },
+      "statements": [
+        {
+          "actions": [
+            {
+              "type": "CALL",
+              "value": "@showUnitActions",
+              "args": {
+                "index": "${index}"
+              }
+            },
+            {
+              "type": "CALL",
+              "value": "@selectUnitAction",
+              "args": {
+                "row": "${row0}",
+                "column": "${column0}"
+              }
+            },
+            {
+              "type": "FINER",
+              "value": "Refreshing Screen"
+            },
+            {
+              "type": "REFRESH"
+            },
+            {
+              "type": "FINER",
+              "value": "Checking screen"
+            },
+            {
+              "condition":{
+                "not": "SCREEN",
+                "value": "battle-actions"
+              },
+              "type": "RETURN",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "actions": [
+            {
+              "type": "FINER",
+              "value": "We had problems"
+            },
+            {
+              "type": "REFRESH"
+            },
+            {
+              "condition":{
+                "is": "SCREEN",
+                "value": "battle-actions"
+              },
+              "type": "TAP",
+              "value": "battle-actions-back"
+            },
+            {
+              "type": "REFRESH"
+            },
+            {
+              "type": "WAIT",
+              "value": "500"
+            },
+            {
+              "type": "REFRESH"
+            },
+            {
+              "type": "RETURN",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+
     "@readyDualCastSafely": {
       "name": "Function - Ready Dual Cast Safely",
       "variables": {
