@@ -1137,6 +1137,20 @@
                 "not": "SCREEN",
                 "value": "battle-actions"
               },
+              "type": "CONTINUE"
+            },
+            {
+              "type": "CALL",
+              "value": "@tapUnit",
+              "args": {
+                "index": "${index}"
+              }
+            }, 
+            {
+              "condition":{
+                "not": "SCREEN",
+                "value": "battle-actions"
+              },
               "type": "RETURN",
               "value": "1"
             }

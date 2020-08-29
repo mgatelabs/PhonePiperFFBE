@@ -420,17 +420,6 @@
               "value": "400"
             },
             {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "WAIT",
-              "value": "400"
-            },
-            {
               "type": "REPEAT",
               "value": ""
             }
@@ -525,17 +514,6 @@
             },
             {
               "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "WAIT",
               "value": "4000"
             },
             {
@@ -604,17 +582,6 @@
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
             },
             {
               "type": "WAIT",
@@ -721,17 +688,6 @@
             },
             {
               "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "WAIT",
               "value": "2000"
             },
             {
@@ -800,17 +756,6 @@
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
             },
             {
               "type": "WAIT",
@@ -907,17 +852,6 @@
             },
             {
               "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "WAIT",
               "value": "2000"
             },
             {
@@ -957,7 +891,7 @@
             {
               "condition": {
                 "is": "CALL",
-                "value": "@readyHealingSafely",
+                "value": "@readyActionSafely",
                 "args": {
                   "index": "3",
                 "row0": "0",
@@ -1057,17 +991,6 @@
             },
             {
               "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
-            },
-            {
-              "type": "WAIT",
               "value": "2000"
             },
             {
@@ -1130,17 +1053,6 @@
               "type": "SET",
               "var": "segment",
               "value": "1"
-            },
-            {
-              "type": "WAIT",
-              "value": "400"
-            },
-            {
-              "type": "CALL",
-              "value": "@tapUnit",
-              "args": {
-                "index": "3"
-              }
             },
             {
               "type": "WAIT",
