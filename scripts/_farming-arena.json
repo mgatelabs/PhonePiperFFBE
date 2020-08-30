@@ -859,6 +859,30 @@
           },
           "actions": [
             {
+              "type": "INFO",
+              "value": "Found Battle Actions Open At Wrong Time: Closing"
+            },
+            {
+              "type": "TAP",
+              "value": "battle-actions-back"
+            },
+            {
+              "type": "REPEAT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "condition": {
+            "is": "SCREEN",
+            "value": "battle-menu-select_opponent"
+          },
+          "actions": [
+            {
+              "type": "INFO",
+              "value": "Found Battle Select Unit Open At Wrong Time: Closing"
+            },
+            {
               "type": "TAP",
               "value": "battle-actions-back"
             },

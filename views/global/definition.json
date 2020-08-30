@@ -65,6 +65,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Battle - Menu - Select Opponent",
+    "screenId" : "battle-menu-select_opponent",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "battle-message",
     "screenId" : "battle-message",
     "points" : [ ],
