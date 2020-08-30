@@ -139,7 +139,7 @@
         }
       },
       "statements": [
-        // If she has HER lb, use it
+        // If she has HER LB, use it
         {
           "condition": {
             "is": "CALL",
@@ -156,6 +156,11 @@
                 "args": {
                   "index": "3"
                 }
+              },
+              {
+                "is": "LESS",
+                "value": "1",
+                "var": "healingLevel"
               },
               {
                 "is": "CALL",
@@ -175,6 +180,15 @@
           },
           "actions": [
             {
+              "type": "INFO",
+              "value": "Ayaka Has Her LB, what sort of world are we living in?  Pressing the button (TM)"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "1"
+            }, 
+            {
               "condition": {
                 "not": "CALL",
                 "value": "@readyUnitLbSafely",
@@ -183,10 +197,6 @@
                 }
               },
               "type": "CONTINUE"
-            },
-            {
-              "type": "INFO",
-              "value": "Ayaka Has Her LB, what sort of world are we living in?  Pressing the button (TM)"
             },
             {
               "type": "SET",
@@ -236,7 +246,7 @@
               },
               {
                 "is": "LESS",
-                "value": "1",
+                "value": "2",
                 "var": "healingLevel"
               },
               {
@@ -279,6 +289,11 @@
               "type": "INFO",
               "value": "Ayaka Needs to Heal and Recover MP"
             },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "2"
+            }, 
             {
               "type": "SET",
               "var": "segment",
@@ -335,6 +350,11 @@
                 "var": "arena-rule-boosts"
               },
               {
+                "is": "LESS",
+                "value": "3",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
@@ -370,7 +390,12 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Elysium (Heal + Barrier with 6 Turn Cool down)"
-            },                   
+            },    
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "3"
+            },               
             {
               "condition": {
                 "not": "CALL",
@@ -432,6 +457,11 @@
                 "var": "arena-rule-boosts"
               },
               {
+                "is": "LESS",
+                "value": "4",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
@@ -467,6 +497,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Purify+ (Cure Status + Barrier with 4 Turn Cool down)"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "4"
             },
             {
               "condition": {
@@ -524,6 +559,11 @@
                 "var": "segment"
               },
               {
+                "is": "LESS",
+                "value": "5",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
@@ -554,6 +594,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Stop Detach (Cure Stop)"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "5"
             },
             {
               "condition": {
@@ -611,6 +656,11 @@
                 "var": "arena-rule-boosts"
               },
               {
+                "is": "LESS",
+                "value": "6",
+                "var": "healingLevel"
+              },
+              {
                 "is": "EQUAL",
                 "value": "0",
                 "var": "resurgence"
@@ -641,6 +691,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Resurgence+"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "6"
             },
             {
               "condition": {
@@ -703,6 +758,11 @@
                 "var": "arena-rule-white_magic"
               },
               {
+                "is": "LESS",
+                "value": "7",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
@@ -728,6 +788,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Curaja (Big Heal) Needed"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "7"
             },
             {
               "condition": {
@@ -785,6 +850,11 @@
                 "var": "arena-rule-white_magic"
               },
               {
+                "is": "LESS",
+                "value": "8",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
@@ -810,6 +880,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Purify (Small Heal + Ailments)"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "8"
             },
             {
               "condition": {
@@ -861,6 +936,11 @@
                 "var": "segment"
               },
               {
+                "is": "LESS",
+                "value": "9",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
@@ -877,6 +957,11 @@
             {
               "type": "INFO",
               "value": "Ayaka is using ESPER"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "9"
             },
             {
               "condition": {
@@ -929,6 +1014,11 @@
                 "var": "arena-rule-white_magic"
               },
               {
+                "is": "LESS",
+                "value": "10",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@unitHasMp",
                 "args": {
@@ -949,6 +1039,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Curaja (Big Heal) Default"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "10"
             },
             {
               "condition": {
@@ -1000,6 +1095,11 @@
                 "var": "segment"
               },
               {
+                "is": "LESS",
+                "value": "11",
+                "var": "healingLevel"
+              },
+              {
                 "is": "EQUAL",
                 "value": "0",
                 "var": "arena-rule-white_magic"
@@ -1025,6 +1125,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Used Purify (Minor Heal) Default"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "11"
             },
             {
               "condition": {
@@ -1076,6 +1181,11 @@
                 "var": "segment"
               },
               {
+                "is": "LESS",
+                "value": "12",
+                "var": "healingLevel"
+              },
+              {
                 "is": "CALL",
                 "value": "@isUnitReady",
                 "args": {
@@ -1088,6 +1198,11 @@
             {
               "type": "INFO",
               "value": "Ayaka Guards, no other option"
+            },
+            {
+              "type": "SET",
+              "var": "healingLevel",
+              "value": "12"
             },
             {
               "type": "SET",
