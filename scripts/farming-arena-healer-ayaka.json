@@ -286,7 +286,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -373,7 +373,7 @@
             },                   
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -470,7 +470,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -557,7 +557,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -644,7 +644,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -731,7 +731,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -813,7 +813,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -952,7 +952,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
@@ -1028,7 +1028,7 @@
             },
             {
               "condition": {
-                "is": "CALL",
+                "not": "CALL",
                 "value": "@readyHealingSafely",
                 "args": {
                   "index": "3",
