@@ -1139,7 +1139,7 @@
             {
               "condition":{
                 "not": "SCREEN",
-                "value": "battle-actions"
+                "value": "battle-menu-select_opponent"
               },
               "type": "CONTINUE"
             },
@@ -1160,7 +1160,7 @@
             {
               "condition":{
                 "not": "SCREEN",
-                "value": "battle-actions"
+                "value": "battle-menu-select_opponent"
               },
               "type": "RETURN",
               "value": "1"
