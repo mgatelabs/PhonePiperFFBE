@@ -917,6 +917,11 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Battle - Menu - Select Opponent",
+    "screenId" : "battle-menu-select_opponent",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Battle - Message",
     "screenId" : "battle-message",
     "points" : [ {
@@ -19653,9 +19658,9 @@
     "name" : "Battle - Menu",
     "componentId" : "battle-menu",
     "x" : 827,
-    "y" : 1808,
+    "y" : 1853,
     "w" : 225,
-    "h" : 87,
+    "h" : 42,
     "enabled" : true
   }, {
     "name" : "Battle - Menu - 0 LB Bar",
@@ -19778,12 +19783,12 @@
     "h" : 0,
     "enabled" : true
   }, {
-    "name" : "battle-menu-back",
+    "name" : "Battle - Menu - Back",
     "componentId" : "battle-menu-back",
-    "x" : 888,
-    "y" : 1512,
-    "w" : 142,
-    "h" : 105,
+    "x" : 875,
+    "y" : 1582,
+    "w" : 155,
+    "h" : 35,
     "enabled" : true
   }, {
     "name" : "Battle - Reload",
