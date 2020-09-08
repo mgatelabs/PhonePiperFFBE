@@ -65,6 +65,11 @@
     "points" : [ ],
     "enabled" : false
   }, {
+    "name" : "Battle - Menu - Magic target",
+    "screenId" : "battle-menu-magic_target",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Battle - Menu - Select Opponent",
     "screenId" : "battle-menu-select_opponent",
     "points" : [ ],

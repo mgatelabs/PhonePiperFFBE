@@ -1139,7 +1139,7 @@
             {
               "condition":{
                 "not": "SCREEN",
-                "value": "battle-menu-select_opponent"
+                "value": "battle-menu-select_opponent,battle-menu-magic_target"
               },
               "type": "CONTINUE"
             },
@@ -1160,7 +1160,7 @@
             {
               "condition":{
                 "not": "SCREEN",
-                "value": "battle-menu-select_opponent"
+                "value": "battle-menu-select_opponent,battle-menu-magic_target"
               },
               "type": "RETURN",
               "value": "1"
