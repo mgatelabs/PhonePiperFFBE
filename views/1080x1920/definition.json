@@ -917,6 +917,11 @@
     } ],
     "enabled" : true
   }, {
+    "name" : "Battle - Menu - Magic target",
+    "screenId" : "battle-menu-magic_target",
+    "points" : [ ],
+    "enabled" : false
+  }, {
     "name" : "Battle - Menu - Select Opponent",
     "screenId" : "battle-menu-select_opponent",
     "points" : [ ],
@@ -20689,10 +20694,10 @@
   }, {
     "name" : "Menu - Home - Raid Event",
     "componentId" : "menu-home-raid_event",
-    "x" : 299,
-    "y" : 496,
-    "w" : 47,
-    "h" : 47,
+    "x" : 451,
+    "y" : 498,
+    "w" : 65,
+    "h" : 48,
     "enabled" : true
   }, {
     "name" : "Menu - Home - Rewards",
