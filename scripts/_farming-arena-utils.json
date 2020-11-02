@@ -628,7 +628,7 @@
             {
               "type": "MATH",
               "var": "aliveUnits",
-              "value": "${unitAlive0}+${unitAlive1}+${unitAlive2}+${unitAlive4}"
+              "value": "${unitAlive0}+${unitAlive1}+${unitAlive2}+${unitAlive3}+${unitAlive4}"
             },
             // How many have enough MP?
             {
@@ -694,7 +694,7 @@
             {
               "type": "MATH",
               "var": "availableMpUnits",
-              "value": "${unitMp0}+${unitMp1}+${unitMp2}+${unitMp4}"
+              "value": "${unitMp0}+${unitMp1}+${unitMp2}+${unitMp3}+${unitMp4}"
             },
             {
               "type": "FINER",

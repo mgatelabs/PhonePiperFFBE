@@ -266,12 +266,12 @@
               },
               {
                 "is": "EQUAL",
-                "value": "4",
+                "value": "5",
                 "var": "availableUnits"
               },
               {
                 "is": "LESS",
-                "value": "4",
+                "value": "5",
                 "var": "availableMpUnits"
               },
               {
@@ -376,12 +376,12 @@
               },
               {
                 "is": "EQUAL",
-                "value": "4",
+                "value": "5",
                 "var": "availableUnits"
               },
               {
                 "is": "EQUAL",
-                "value": "4",
+                "value": "5",
                 "var": "aliveUnits"
               }
             ]
@@ -483,12 +483,12 @@
               },
               {
                 "is": "LESS",
-                "value": "4",
+                "value": "5",
                 "var": "availableUnits"
               },
               {
                 "is": "EQUAL",
-                "value": "4",
+                "value": "5",
                 "var": "aliveUnits"
               }
             ]
@@ -580,12 +580,12 @@
               },
               {
                 "is": "LESS",
-                "value": "4",
+                "value": "5",
                 "var": "availableUnits"
               },
               {
                 "is": "EQUAL",
-                "value": "4",
+                "value": "5",
                 "var": "aliveUnits"
               }
             ]
@@ -682,7 +682,7 @@
               },
               {
                 "is": "LESS",
-                "value": "4",
+                "value": "5",
                 "var": "aliveUnits"
               }
             ]
@@ -780,7 +780,7 @@
               {
                 "var": "availableHpUnits",
                 "is": "LESS",
-                "value": "4"
+                "value": "5"
               }
             ]
           },
@@ -872,7 +872,7 @@
               {
                 "var": "availableHpUnits",
                 "is": "LESS",
-                "value": "4"
+                "value": "5"
               }
             ]
           },
