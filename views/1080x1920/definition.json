@@ -20694,9 +20694,9 @@
   }, {
     "name" : "Menu - Home - Raid Event",
     "componentId" : "menu-home-raid_event",
-    "x" : 451,
-    "y" : 498,
-    "w" : 65,
+    "x" : 287,
+    "y" : 493,
+    "w" : 69,
     "h" : 48,
     "enabled" : true
   }, {
