@@ -2437,10 +2437,10 @@
     "screenId" : "battle-unit-1_notfull",
     "points" : [ {
       "x" : 895,
-      "y" : 834,
-      "r" : 2,
-      "g" : 2,
-      "b" : 16
+      "y" : 835,
+      "r" : 0,
+      "g" : 0,
+      "b" : 39
     } ],
     "enabled" : true
   }, {
