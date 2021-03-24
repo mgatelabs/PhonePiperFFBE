@@ -2442,11 +2442,11 @@
     "name" : "Battle - Unit - 1 - LB Not Full",
     "screenId" : "battle-unit-1_notfull",
     "points" : [ {
-      "x" : 895,
+      "x" : 896,
       "y" : 835,
-      "r" : 0,
-      "g" : 0,
-      "b" : 39
+      "r" : 3,
+      "g" : 3,
+      "b" : 47
     } ],
     "enabled" : true
   }, {
