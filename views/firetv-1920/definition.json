@@ -3249,17 +3249,17 @@
     "name" : "Battle - Unit - 4 - LB Not Full",
     "screenId" : "battle-unit-4_notfull",
     "points" : [ {
+      "x" : 1847,
+      "y" : 834,
+      "r" : 1,
+      "g" : 1,
+      "b" : 16
+    }, {
       "x" : 1846,
       "y" : 835,
       "r" : 1,
-      "g" : 1,
-      "b" : 39
-    }, {
-      "x" : 1845,
-      "y" : 835,
-      "r" : 0,
-      "g" : 0,
-      "b" : 27
+      "g" : 2,
+      "b" : 30
     } ],
     "enabled" : true
   }, {
