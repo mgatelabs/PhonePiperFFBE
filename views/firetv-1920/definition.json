@@ -525,10 +525,16 @@
     "name" : "Battle - Abilities - Lb - Available",
     "screenId" : "battle-abilities-lb-available",
     "points" : [ {
-      "x" : 895,
+      "x" : 891,
       "y" : 683,
-      "r" : 122,
-      "g" : 57,
+      "r" : 117,
+      "g" : 53,
+      "b" : 0
+    }, {
+      "x" : 892,
+      "y" : 684,
+      "r" : 119,
+      "g" : 55,
       "b" : 0
     } ],
     "enabled" : true
